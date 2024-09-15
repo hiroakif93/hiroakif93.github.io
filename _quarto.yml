@@ -2,6 +2,12 @@ project:
   type: website
   output-dir: docs
 
+  preview: 
+    port: 22222
+    browser: true
+    watch-inputs: true
+    navigate: true
+
 languages:
   default: en
   additional:
@@ -13,6 +19,7 @@ languages:
 website:
   navbar:
     pinned: true
+    collapse: false
     left:
       - text: Home
         href: index.qmd        
