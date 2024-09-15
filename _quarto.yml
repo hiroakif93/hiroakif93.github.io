@@ -5,10 +5,13 @@ project:
 website:
   title: "Hiroaki Fujita's website"
   navbar:
+    pinned: true
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: Profile/about.qmd
+        text: Profile
+      - text: Documents
 
 format:
   html:

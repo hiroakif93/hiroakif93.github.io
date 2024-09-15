@@ -1,7 +1,7 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
+    "objectID": "Profile/about.html",
+    "href": "Profile/about.html",
     "title": "About",
     "section": "",
     "text": "About this site"
@@ -9,7 +9,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "hiroakif93",
+    "title": "Hiroaki Fujita’s website",
     "section": "",
     "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   }

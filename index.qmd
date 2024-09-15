@@ -1,5 +1,5 @@
 ---
-title: "hiroakif93"
+title: "Hiroaki Fujita’s website"
 ---
 
 This is a Quarto website.
