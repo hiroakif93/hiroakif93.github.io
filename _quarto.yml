@@ -13,7 +13,7 @@ languages:
 
 website:
   back-to-top-navigation: true
-
+  image: "images/network.jpg"
   navbar:
     pinned: true
     collapse: false
@@ -46,6 +46,7 @@ website:
   page-footer:
     center: "Copyright 2021, Hiroaki Fujita"
     border: true
+    background: transparent
 
 format:
   html:
