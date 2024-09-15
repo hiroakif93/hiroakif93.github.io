@@ -1,9 +1,14 @@
 /* css styles */
 
-body.home {
-    background-image: url('images/network.jpg');
-    background-size: auto;
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
+body {
+  
+}
+
+.home-page {
+  background-image: url('images/network.jpg');
+  background-size: 500px; 
+  background-position: 120% 10%; 
+  background-repeat: no-repeat;
+  min-height: 100vh; 
+  /*padding: 20px; */
+}

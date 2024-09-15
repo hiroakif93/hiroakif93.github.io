@@ -1,13 +1,13 @@
 ---
-title: "Hiroaki Fujita’s website"
-class: home
-search: false
+title: "Hiroaki Fujita's Website"
 ---
+
+<div class="home-page">
 
 細菌群集・動態予測・ネットワーク解析を興味の対象に研究をしています
 
 - About：研究履歴  
 - Publications：出版論文・プレプリント・学会発表  
-- Documents：Rをメインとした解説  
+- Documents：Rをメインとした解説 
 
-
+<div/>
