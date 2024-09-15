@@ -2,16 +2,31 @@ project:
   type: website
   output-dir: docs
 
+languages:
+  default: en
+  additional:
+    - id: ja
+      title: 日本語
+      url: /ja/
+      output-dir: "ja"
+
 website:
-  title: "Hiroaki Fujita's website"
   navbar:
     pinned: true
     left:
-      - href: index.qmd
-        text: Home
-      - href: Profile/about.qmd
-        text: Profile
+      - text: Home
+        href: index.qmd        
+      - text: About
+        href: About/about.qmd       
+      - text: Publications
+        href: Publications/index.qmd
       - text: Documents
+        menu:
+          - text: R
+          - text: papers
+
+footer:
+  "© 2024 Hiroaki Fujita"
 
 format:
   html:

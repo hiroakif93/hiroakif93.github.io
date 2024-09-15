@@ -1,16 +1,16 @@
 [
   {
-    "objectID": "Profile/about.html",
-    "href": "Profile/about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Hiroaki Fujita’s website",
     "section": "",
     "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "About/about.html",
+    "href": "About/about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
   }
 ]
