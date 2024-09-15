@@ -44,9 +44,8 @@ website:
         - Documents/R/02_Class.qmd
 
   page-footer:
-    center: "Copyright 2021, Hiroaki Fujita"
+    center: "Copyright 2024, Hiroaki Fujita"
     border: true
-    background: transparent
 
 format:
   html:

@@ -1,5 +1,6 @@
 ---
 title: "Hiroaki Fujita’s website"
+class: home
 search: false
 ---
 

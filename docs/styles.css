@@ -1,1 +1,9 @@
 /* css styles */
+
+body.home {
+    background-image: url('images/network.jpg');
+    background-size: auto;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }

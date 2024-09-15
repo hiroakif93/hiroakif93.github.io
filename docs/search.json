@@ -1,36 +1,5 @@
 [
   {
-    "objectID": "About/about.html",
-    "href": "About/about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "Publications/index.html",
-    "href": "Publications/index.html",
-    "title": "Publications",
-    "section": "",
-    "text": "Preprints\nPapers\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "Documents/index.html",
-    "href": "Documents/index.html",
-    "title": "R tips",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "Documents/R/index.html",
-    "href": "Documents/R/index.html",
-    "title": "R tips",
-    "section": "",
-    "text": "Back to top",
-    "crumbs": [
-      "R tips"
-    ]
-  },
-  {
     "objectID": "Documents/R/02_Class.html",
     "href": "Documents/R/02_Class.html",
     "title": "Class",
@@ -48,6 +17,30 @@
     "text": "Back to top",
     "crumbs": [
       "About R"
+    ]
+  },
+  {
+    "objectID": "About/about.html",
+    "href": "About/about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Publications/index.html",
+    "href": "Publications/index.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Preprints\nPapers\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Documents/R/index.html",
+    "href": "Documents/R/index.html",
+    "title": "R tips",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "R tips"
     ]
   }
 ]
