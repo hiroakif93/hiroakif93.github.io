@@ -1,12 +1,7 @@
 project:
   type: website
   output-dir: docs
-
-  preview: 
-    port: 22222
-    browser: true
-    watch-inputs: true
-    navigate: true
+  
 
 languages:
   default: en
@@ -17,6 +12,8 @@ languages:
       output-dir: "ja"
 
 website:
+  back-to-top-navigation: true
+
   navbar:
     pinned: true
     collapse: false
@@ -31,9 +28,14 @@ website:
         menu:
           - text: R
           - text: papers
-
-footer:
-  "© 2024 Hiroaki Fujita"
+          
+    right: 
+      - icon: github
+        href: 'https://github.com/hiroakif93'
+  
+  page-footer:
+    center: "Copyright 2021, Hiroaki Fujita"
+    border: true
 
 format:
   html:
