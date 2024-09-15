@@ -27,12 +27,22 @@ website:
       - text: Documents
         menu:
           - text: R
+            href: Documents/R/index.qmd
           - text: papers
-          
+
     right: 
       - icon: github
         href: 'https://github.com/hiroakif93'
   
+  sidebar:
+    - title: "R"
+      style: "docked"
+      background: light
+      contents:
+        - Documents/R/index.qmd
+        - Documents/R/01_aboutR.qmd
+        - Documents/R/02_Class.qmd
+
   page-footer:
     center: "Copyright 2021, Hiroaki Fujita"
     border: true

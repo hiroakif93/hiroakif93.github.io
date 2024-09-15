@@ -2,6 +2,10 @@
 title: "Hiroaki Fujita’s website"
 ---
 
-This is a Quarto website.
+細菌群集・動態予測・ネットワーク解析を興味の対象に研究をしています
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+About：研究履歴  
+Publications：出版論文・プレプリント・学会発表  
+Documents：Rをメインとした解説  
+
+
