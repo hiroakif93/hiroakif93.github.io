@@ -48,6 +48,11 @@ nav {
     
 }
 
+.menu ul a {
+  line-height: 40px; 
+  z-index: 1;
+}
+
 nav ul li .menu {
   top: 100%; /* 親要素の下に配置 */
   left: 0;
