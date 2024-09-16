@@ -6,9 +6,36 @@ body {
 
 .home-page {
   background-image: url('images/network.jpg');
-  background-size: 500px; 
-  background-position: 120% 10%; 
+  background-size: 300px; 
+  background-position: 120% 50% ; /* 120% 50% or right bottom*/ 
   background-repeat: no-repeat;
-  min-height: 100vh; 
+  min-height: 50vh; 
   /*padding: 20px; */
+}
+
+/* Navbar */
+.navbar {
+  padding: 15px;           /* ナビバーの内側の余白 */
+  font-size: 18px;         /* ナビバーの通常のフォントサイズ */
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+      padding: 20px;       /* パディングを大きくする */
+      font-size: 20px;     /* フォントサイズを大きくする */
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .navbar {
+      padding: 12px;       /* パディングを少し減らす */
+      font-size: 16px;     /* フォントサイズを少し小さくする */
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar {
+      padding: 10px;       /* パディングをさらに減らす */
+      font-size: 14px;     /* フォントサイズをさらに小さくする */
+  }
 }
