@@ -2,6 +2,13 @@
 title: Publications
 ---
 
+```{r, echo = FALSE, warning = FALSE}
+library(knitr)
+
+data=read.csv('Book1.csv')
+kable(data, format = "html")
+
+```
 
 Preprints
 

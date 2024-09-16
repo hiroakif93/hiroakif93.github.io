@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "Publications/index.html",
+    "href": "Publications/index.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Title\nAuthor\nYear\nJournal\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPreprints\nPapers\n\n\n\n Back to top"
+  },
+  {
     "objectID": "Documents/R/02_Class.html",
     "href": "Documents/R/02_Class.html",
     "title": "Class",
@@ -25,20 +32,6 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "Publications/index.html",
-    "href": "Publications/index.html",
-    "title": "Publications",
-    "section": "",
-    "text": "Preprints\nPapers\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Hiroaki Fujita’s Website",
-    "section": "",
-    "text": "細菌群集・動態予測・ネットワーク解析を興味の対象に研究をしています\n\nAbout：研究履歴\n\nPublications：出版論文・プレプリント・学会発表\n\nDocuments：Rをメインとした解説\n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "Documents/R/index.html",
