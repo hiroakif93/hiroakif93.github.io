@@ -14,26 +14,6 @@ body {
   /*padding: 20px; */
 }
 
-/* Navbar */
-.navbar {
-  padding: 15px;           /* ナビバーの内側の余白 */
-  font-size: 18px;         /* ナビバーの通常のフォントサイズ */
-  overflow-x: auto;
-  display: flex; /* フレックスボックスで横並びにする */
-  overflow-x: auto; /* 横方向にスクロール可能にする */
-  white-space: nowrap; /* 改行させない */
-  -webkit-overflow-scrolling: touch;
-}
-
-.navbar::-webkit-scrollbar {
-  height: 8px; /* スクロールバーの高さ */
-}
-
-.navbar::-webkit-scrollbar-thumb {
-  background-color: #9999; /* スクロールバーの色 */
-  border-radius: 4px; /* スクロールバーの角を丸く */
-}
-
 @media (min-width: 1200px) {
   .navbar {
       padding: 20px;       /* パディングを大きくする */
