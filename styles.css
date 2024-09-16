@@ -38,4 +38,13 @@ body {
       padding: 10px;       /* パディングをさらに減らす */
       font-size: 14px;     /* フォントサイズをさらに小さくする */
   }
+
+  .home-page {
+    background-image: url('images/network.jpg');
+    background-size: 100px; 
+    background-position: bottom ; /* 120% 50% or right bottom*/ 
+    background-repeat: no-repeat;
+    min-height: 50vh; 
+    /*padding: 20px; */
+  }
 }
