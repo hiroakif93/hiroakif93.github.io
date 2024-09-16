@@ -7,9 +7,10 @@ body {
 .home-page {
   background-image: url('images/network.jpg');
   background-size: 300px; 
-  background-position: 120% 50% ; /* 120% 50% or right bottom*/ 
+  background-position: right bottom ; /* 120% 50% or right bottom*/ 
   background-repeat: no-repeat;
   min-height: 50vh; 
+  position: relative;
   /*padding: 20px; */
 }
 
@@ -17,12 +18,30 @@ body {
 .navbar {
   padding: 15px;           /* ナビバーの内側の余白 */
   font-size: 18px;         /* ナビバーの通常のフォントサイズ */
+  overflow-x: auto;
+  display: flex; /* フレックスボックスで横並びにする */
+  overflow-x: auto; /* 横方向にスクロール可能にする */
+  white-space: nowrap; /* 改行させない */
+  -webkit-overflow-scrolling: touch;
+}
+
+.navbar::-webkit-scrollbar {
+  height: 8px; /* スクロールバーの高さ */
+}
+
+.navbar::-webkit-scrollbar-thumb {
+  background-color: #9999; /* スクロールバーの色 */
+  border-radius: 4px; /* スクロールバーの角を丸く */
 }
 
 @media (min-width: 1200px) {
   .navbar {
       padding: 20px;       /* パディングを大きくする */
       font-size: 20px;     /* フォントサイズを大きくする */
+  }
+
+  .home-page {
+    padding: 0px
   }
 }
 
@@ -37,5 +56,13 @@ body {
   .navbar {
       padding: 10px;       /* パディングをさらに減らす */
       font-size: 14px;     /* フォントサイズをさらに小さくする */
+  }
+
+  .home-page {
+    background-size: 300px; 
+    background-position: right bottom ; /* 120% 50% or right bottom*/ 
+    background-repeat: no-repeat;
+    min-height: 50vh; 
+    
   }
 }
