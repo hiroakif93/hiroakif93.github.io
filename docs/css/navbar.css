@@ -1,0 +1,65 @@
+
+/* Navibar base*/
+nav {
+    background-color: #bcbcbc00;
+    text-align: center;
+    padding: 5pt
+  }
+  
+  nav ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0 ;
+  }
+  
+  nav ul li {
+    display: inline-block; 
+    width: 18%;
+    min-width: 90px
+  }
+  
+  nav li:not(:last-child){
+    border-right:2px solid #ddd;
+    }
+
+  nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  nav ul li.current a{
+    color: #f35e31;
+    }
+
+  nav ul li a:hover {
+    text-decoration: underline; 
+    color: #db9b3a;    
+  }
+
+
+  /* Dropdown menu*/
+  .menu {
+    display: none; 
+    position: absolute;
+    background-color: white; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    z-index: 1000; 
+}
+
+li:hover .menu {
+    display: block; /* ホバー時に表示 */
+}
+
+.menu li {
+    list-style-type: none; /* リストスタイルを無くす */
+    padding: 5px 10px; /* パディング */
+}
+
+.menu li a {
+    color: black; /* テキストカラー */
+    text-decoration: none; /* 下線を無くす */
+}
+
+.menu li a:hover {
+    background-color: #dedede; /* ホバー時の背景色 */
+}
