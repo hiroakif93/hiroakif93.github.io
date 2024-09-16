@@ -3,7 +3,8 @@
 nav {
     background-color: #bcbcbc00;
     text-align: center;
-    padding: 5pt
+    padding: 10pt;
+    border-bottom: 1px solid #ddd;
   }
   
   nav ul {

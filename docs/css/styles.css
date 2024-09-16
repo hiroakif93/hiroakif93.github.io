@@ -1,7 +1,16 @@
 /* css styles */
-
-
 body {
+  font-family: 'Nanum Gothic';
+}
+
+main h1 {
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 2em; /* 必要に応じてフォントサイズも調整 */
+  font-weight: 300;
+
+  display: grid;
+  place-items: center; /* 水平・垂直の両方で中央配置 */
+  height: 20vh;
   
 }
 
