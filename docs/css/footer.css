@@ -4,4 +4,5 @@ footer {
     border-top: 0.6px solid #3333338b; /* 上に罫線を追加 */
     padding: 10px 0; /* 上下のパディング */
     margin-top: 20px; /* フッターの上にマージンを追加 */
+    width: 100%;
 }
