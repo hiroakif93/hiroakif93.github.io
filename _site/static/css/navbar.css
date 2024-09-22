@@ -1,0 +1,36 @@
+/* Hide the dropdown initially */
+.hidden {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li ul {
+    list-style: none;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+/* Make sure that when visible, the dropdown stays in place */
+nav ul li ul li {
+    margin: 0;
+}

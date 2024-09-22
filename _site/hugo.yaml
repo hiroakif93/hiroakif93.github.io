@@ -1,0 +1,14 @@
+baseURL: https://example.org/
+languageCode: en-us
+title: Hiroaki Fujita's Website
+
+sectionPagesMenu: main
+
+menus:
+  main:
+  - name: Home
+    pageRef: /
+    weight: 10
+  - name: Products
+    pageRef: /products
+    weight: 20
