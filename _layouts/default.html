@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" type="text/css" href="/_assets/css/styles.css">
+    <link rel="stylesheet" href="/_assets/css/navbar.css">
+    <link rel="stylesheet" href="/_assets/css/footer.css">
+
+    {% if page.css %}
+        <link rel="stylesheet" href="{{ page.css | relative_url }}">
+    {% endif %}
+    
+  </head>
+
+  <!-- Main -->
+  <body>
+    
+    <!-- Language switcher  -->
+    <header class="lang">
+        <a href="index.html">English</a>/<a href="index_jp.html">日本語</a>
+    </header>
+
+    <header>
+        {% include navbar.html %}
+    </header>
+
+    <section>
+      {{ content }}
+    </section>
+
+    <!-- footer -->
+    {% include footer.html %}
+  
+  </body>
+</html>

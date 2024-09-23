@@ -1,0 +1,35 @@
+---
+title: Fujita Hiroaki's Website
+layout: default
+css: /_assets/css/index.css
+---
+
+<div class=bg>
+
+    <main>
+        <h1>{{ page.title }}</h1>
+        <p class="home_item">I am a researcher interested in Micrbial community/Dynamical systems/Network analysis.</p> 
+    </main>
+</div>
+
+<div class="container"></div>
+    <!-- 左下に各ページの説明 -->
+    <div class="left">
+        <h2>Pages</h2>
+        <ul>
+            <li><strong>About:</strong> Learn more about me.</li>
+            <li><strong>Documents:</strong> Resources on R and Bioinfo.</li>
+            <li><strong>Publication:</strong> My research papers and articles.</li>
+        </ul>
+    </div>
+
+    <!-- 右下に最新のPostを3件表示 -->
+    <div class="right">
+        <h2>Latest Posts</h2>
+        <ul>
+            {% for post in site.posts limit:3 %}
+                <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

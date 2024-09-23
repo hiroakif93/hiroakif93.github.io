@@ -1,0 +1,18 @@
+footer {
+    color: rgb(103, 103, 103);
+    display: flex;
+    justify-content: space-between;
+    text-align: left; 
+    border-top: 1.2px solid #3333338b; /* 上に罫線を追加 */
+    padding: 20px 50px;
+    margin-top: 20px; 
+    width: 100%;
+    position: relative; /* フッターが上に重ならないように */
+    bottom: 0;
+    line-height: 0.9;
+}
+
+footer > * {
+    flex: 1; /* 各列を均等に配置 */
+    margin: 0 15px /* 列の間に少しマージンを追加 */
+}

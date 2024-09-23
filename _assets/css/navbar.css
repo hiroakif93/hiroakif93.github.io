@@ -1,0 +1,61 @@
+
+/* Navibar base*/
+nav {
+  position: relative;
+  background-color: #bcbcbc00;
+  text-align: center;
+  padding: 10pt;
+  border-bottom: 1.2px solid #ddd;
+}
+
+nav ul {
+  list-style-type: none; 
+  padding: 0;
+  margin: 0 ;
+}
+
+nav ul li {
+  display: inline-block; 
+  position: relative;
+  width: 18%;
+  min-width: 90px
+}
+
+nav li:not(:last-child){
+  border-right:2px solid #cdc8bf;
+  }
+
+nav ul li a {
+  display: block;
+  padding: 10px 15px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+nav ul li.current a{
+  color: #f35e31;
+  }
+
+nav ul li a:hover {
+  text-decoration: underline; 
+  color: #db9b3a;    
+}
+
+/* ドロップダウンを表示するためのクラス */
+nav .show > ul {
+  display: block;
+}
+
+nav ul ul {
+  display: none; /* 初期状態でドロップダウンを隠す */
+  position: absolute;
+  top: 100%; /* 親要素の下に配置 */
+  left: 0;
+  padding: 0;
+  margin: 0;
+  background-color: #f8f9fa;
+  list-style-type: none;
+  z-index: 1000; /* 重なり順を指定 */
+}
+
+  /* Dropdown menu*/
