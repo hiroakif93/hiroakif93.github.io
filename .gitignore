@@ -1,7 +1,9 @@
-/_learning/
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+.bundle/
 
-/.quarto/
-
-/Images/_DSC4635.JPG
-
-*/.DS_Store
+*/DS_Store
+_setting.txt
