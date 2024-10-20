@@ -1,0 +1,49 @@
+/* css styles */
+
+html, body {
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  font-family: 'Nanum Gothic';
+  width: 100%;
+}
+
+.lang {
+  display: flex; /* フレックスボックスを使用 */
+  justify-content: flex-end; /* 右寄せに配置 */
+  background-color: #f8f9fa; /* 背景色を設定 */
+  padding: 2px; /* パディングを設定 */
+  margin-right: 2%;
+}
+
+.lang a {
+  text-decoration: none; /* 下線を削除 */
+  color: #333; /* リンクの色を設定 */
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+      padding: 20px;       /* パディングを大きくする */
+      font-size: 20px;     /* フォントサイズを大きくする */
+  }
+
+  .home-page {
+    padding: 0px
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .navbar {
+      padding: 12px;       /* パディングを少し減らす */
+      font-size: 16px;     /* フォントサイズを少し小さくする */
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar {
+      padding: 10px;       /* パディングをさらに減らす */
+      font-size: 14px;     /* フォントサイズをさらに小さくする */
+  }

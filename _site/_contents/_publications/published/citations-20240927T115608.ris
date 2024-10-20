@@ -1,0 +1,25 @@
+Provider: Silverchair
+Database: Oxford University Press
+Content: text/plain; charset="UTF-8"
+
+TY  - JOUR
+AU  - Hayashi, Ibuki
+AU  - Fujita, Hiroaki
+AU  - Toju, Hirokazu
+T1  - Deterministic and stochastic processes generating alternative states of microbiomes
+PY  - 2024
+Y1  - 2024/01/01
+DO  - 10.1093/ismeco/ycae007
+JO  - ISME Communications
+JA  - ISME Commun
+VL  - 4
+IS  - 1
+SP  - ycae007
+SN  - 2730-6151
+AB  - The structure of microbiomes is often classified into discrete or semi-discrete types potentially differing in community-scale functional profiles. Elucidating the mechanisms that generate such “alternative states” of microbiome compositions has been one of the major challenges in ecology and microbiology. In a time-series analysis of experimental microbiomes, we here show that both deterministic and stochastic ecological processes drive divergence of alternative microbiome states. We introduced species-rich soil-derived microbiomes into eight types of culture media with 48 replicates, monitoring shifts in community compositions at six time points (8 media × 48 replicates × 6 time points = 2304 community samples). We then confirmed that microbial community structure diverged into a few state types in each of the eight medium conditions as predicted in the presence of both deterministic and stochastic community processes. In other words, microbiome structure was differentiated into a small number of reproducible compositions under the same environment. This fact indicates not only the presence of selective forces leading to specific equilibria of community-scale resource use but also the influence of demographic drift (fluctuations) on the microbiome assembly. A reference-genome-based analysis further suggested that the observed alternative states differed in ecosystem-level functions. These findings will help us examine how microbiome structure and functions can be controlled by changing the “stability landscapes” of ecological community compositions.
+Y2  - 9/27/2024
+UR  - https://doi.org/10.1093/ismeco/ycae007
+ER  - 
+
+
+
