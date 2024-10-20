@@ -1,5 +1,11 @@
 /* css styles */
 
+html, body {
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 header {
   font-family: 'Nanum Gothic';
   width: 100%;
@@ -10,11 +16,10 @@ header {
   justify-content: flex-end; /* 右寄せに配置 */
   background-color: #f8f9fa; /* 背景色を設定 */
   padding: 2px; /* パディングを設定 */
-  margin-left: auto
+  margin-right: 2%;
 }
 
 .lang a {
-  margin-left: 15px; /* リンクの間隔を設定 */
   text-decoration: none; /* 下線を削除 */
   color: #333; /* リンクの色を設定 */
 }

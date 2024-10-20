@@ -13,3 +13,4 @@ plugins:
 include:
   - _contents
   - _assets
+  - _publications
