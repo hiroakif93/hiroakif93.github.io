@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" type="text/css" href="/_assets/css/styles.css">
-    <link rel="stylesheet" href="/_assets/css/navbar.css">
-    <link rel="stylesheet" href="/_assets/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/_assets/css/styles.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/_assets/css/navbar.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/_assets/css/footer.css">
 
     {% if page.css %}
         <link rel="stylesheet" href="{{ page.css | relative_url }}">
