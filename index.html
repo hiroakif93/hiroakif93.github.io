@@ -8,7 +8,7 @@ css: /_assets/css/index.css
 
     <main>
         <h1>{{ page.title }}</h1>
-        <p class="home_item">I am a researcher interested in Micrbial community/Dynamical systems/Network analysis.</p> 
+        <p class="home_item">群集動態予測や種間相互作用ネットワーク解明をテーマに「群集情報解析屋」を目指しています.</p> 
     </main>
     
 </div>
@@ -24,13 +24,4 @@ css: /_assets/css/index.css
         </ul>
     </div>
 
-    <!-- 右下に最新のPostを3件表示 -->
-    <div class="right">
-        <h2>Latest Posts</h2>
-        <ul>
-            {% for post in site.posts limit:3 %}
-                <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
-            {% endfor %}
-        </ul>
-    </div>
 </div>
