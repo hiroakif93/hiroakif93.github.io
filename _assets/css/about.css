@@ -15,12 +15,14 @@ section{
     background-color: #f0f0f0dc;
     margin-top: -2%;
     padding: 2% 2%;
+    border:2px dashed #c7c5c5dc
 }
 
 .careerbg  {
     background-color: #f0f0f0dc;
     margin-top: 2%;
     padding-top: 2%;
+    border:2px dashed #c7c5c5dc
 }
 .career ul {
     list-style-type: disc; 
