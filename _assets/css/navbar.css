@@ -1,7 +1,7 @@
 nav {
   position: relative;
   text-align: center;
-  border-bottom: 1.2px solid #c9c9c9;
+  border-bottom: 1.5px solid #c9c9c9;
   border-top: 0.6px solid #c9c9c9;
 }
 
@@ -19,7 +19,9 @@ nav ul li {
   margin-right: 0;
 }
 
-nav li:not(:last-child){
+
+
+nav > ul > li:not(:last-child){
   border-right:3px solid #ddd;
   }
 
@@ -59,10 +61,11 @@ nav ul ul {
   margin: 0;
 }
 
+
 .dropdown-content a {
-  padding: 10px;
   color: black;
-  border: 1.2px solid #c9c9c9;
+  border-bottom: 1.6px solid #c9c9c9;
+  width: 100%
 }
 
 .dropdown-content a:hover {
@@ -72,6 +75,7 @@ nav ul ul {
 
 nav .dropbtn {
   padding-right: 30px;
+  width: 100%;
 }
 
 
@@ -117,10 +121,11 @@ nav .show > ul {
     z-index: 1000; 
   }
 
-  nav ul li {
+  nav > ul > li {
     margin: 0 0;
     border-bottom: 1.2px solid #8d8d8d;
     height: 200%;
+    padding-left: 10%;
   }
 
   nav ul li:last-child {
