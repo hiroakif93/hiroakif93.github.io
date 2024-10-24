@@ -21,10 +21,22 @@
           }
       });
   });
-  </script>
+</script>
   
+<script>
+  function toggleMenu() {
+    var menu = document.getElementById("nav-menu");
+    if (menu.classList.contains("show")) {
+      menu.classList.remove("show");
+    } else {
+      menu.classList.add("show");
+    }
+  }
+</script>
+
 <nav>
-    <ul>
+  <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <ul id="nav-menu">
       <li><a href="{{ "/" | relative_url }}">Home</a></li>
       <li><a href="{{ "/about/index.html" | relative_url }}">About</a></li>
       <li><a href="{{ "/Publications/index.html" | relative_url }}">Publication</a></li>
@@ -36,4 +48,4 @@
         </ul>
       </li>
     </ul>
-  </nav>
+</nav>

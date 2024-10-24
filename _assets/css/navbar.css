@@ -7,28 +7,30 @@ nav {
 
 nav ul {
   list-style-type: none; /* リストマーカーを削除 */
-  padding: 0;
-  margin: 0;
+  padding: 0 0;
+  margin: 0 0;
   background-color: #eaeef3;
 }
 
 nav ul li {
   position: relative;
   display: inline-block; /* インラインブロックで横並びに */
-  width: 18%;
-  min-width: 90px
+  width: 12%;
+  margin-right: 0;
 }
 
 nav li:not(:last-child){
-  border-right:2px solid #ddd;
+  border-right:3px solid #ddd;
   }
 
 nav ul li a {
   display: block;
-  padding: 10px 15px;
+  padding: 15px 0;
+  color: black;
+  text-align: center;
   text-decoration: none;
-  color: rgb(0, 0, 0);
-}
+  }
+  
 
 nav ul li.current a{
   color: #f35e31;
@@ -36,7 +38,7 @@ nav ul li.current a{
 
 nav ul li a:hover {
   text-decoration: underline; 
-  color: #db9b3a;    
+  color: #db9b3a;   
 }
 
 nav ul ul {
@@ -45,27 +47,109 @@ nav ul ul {
   top: 100%; /* 親要素の下に配置 */
   padding: 0;
   margin: 0;
+  min-width: 100%;
   background-color: #f8f9fa;
   list-style-type: none;
   z-index: 1000; /* 重なり順を指定 */
 }
 
-nav ul ul li {
-  display: block;
+.dropdown-content li{
+  float: none;
+  width: 80%;
+  margin: 0;
 }
 
-nav ul ul li a {
-  padding: 10px 5px;
+.dropdown-content a {
+  padding: 10px;
   color: black;
+  border: 1.2px solid #c9c9c9;
 }
 
-nav ul ul li a:hover {
+.dropdown-content a:hover {
   text-decoration: underline; 
   color: #db9b3a;
 }
+
+nav .dropbtn {
+  padding-right: 30px;
+}
+
 
 /* ドロップダウンを表示するためのクラス */
 nav .show > ul {
   display: block;
   width: 100%;
+}
+
+.menu-icon {
+  display: none;  /* 初期状態では非表示 */
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .menu-icon {
+    display: block;  /* 小さい画面では表示 */
+    border-bottom: 1.2px solid #c9c9c9;
+    background-color: #eaeef3;
+  }
+
+  nav {
+    position: relative;    
+    border-top: 0.6px solid #c9c9c9;
+    display: flex;
+  }
+  
+
+  nav li:not(:last-child){
+    border-right: 0 solid #ddd;
+  }
+
+  nav ul {
+    display: none;  /* 初期状態ではナビゲーションメニューを隠す */
+    flex-direction: column;  /* 縦並びにする */
+    position: absolute;
+    top: 59px;
+    left: 0;
+    width: 150px;
+    background-color: #dbd9d9cc;  /* ナビメニューの背景色 */
+    z-index: 1000; 
+  }
+
+  nav ul li {
+    margin: 0 0;
+    border-bottom: 1.2px solid #8d8d8d;
+    height: 200%;
+  }
+
+  nav ul li:last-child {
+    border-bottom: none;
+  }
+  
+  nav ul.show {
+    display: flex;  /* ハンバーガーメニューをクリックすると表示 */
+  }
+
+  nav li:hover > ul {
+    display: block;
+    top: 100%;
+    left: 0; 
+  }
+  
+  nav ul ul {
+    display: none;  /* 初期状態で非表示 */
+    position: absolute;
+    background-color: #f8f9fa;
+    min-width: 150px;  /* メニューの幅を指定 */
+    left: 0;
+    top: 100%;
+    width: 100%;
+    z-index: 2000;  /* ドロップダウンメニューが前面に表示されるようにする */
+  }
+
+  nav .dropdown {
+    padding-right: 100px;
+  }
+
 }

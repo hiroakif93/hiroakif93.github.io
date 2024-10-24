@@ -1,0 +1,80 @@
+nav {
+    position: relative;
+    text-align: center;
+    border-bottom: 1.2px solid #c9c9c9;
+    border-top: 0.6px solid #c9c9c9;
+  }
+  
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #eaeef3;
+  display: flex;  /* ナビアイテムを横並びにする */
+}
+
+nav ul li {
+  position: relative;
+  display: inline-block; /* インラインブロックで横並びに */
+  width: 18%;
+  min-width: 90px
+}
+
+nav ul li a {
+  display: block;
+  padding: 14px 20px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #eaeef3;
+}
+
+/* ドロップダウンメニューのスタイル */
+nav ul ul {
+  display: none;  /* 初期状態で非表示 */
+  position: absolute;
+  background-color: #f8f9fa;
+  min-width: 150px;  /* メニューの幅を指定 */
+  z-index: 1;  /* ドロップダウンメニューが前面に表示されるようにする */
+}
+
+nav ul ul li {
+  float: none;
+  width: 100%;
+}
+
+nav ul ul li a {
+  padding: 12px 16px;  /* ドロップダウンメニューの項目のパディング */
+  color: white;
+}
+
+nav ul ul li a:hover {
+  background-color: #575757;
+}
+
+/* ドロップダウンメニューを表示するためのクラス */
+nav li:hover > ul {
+  display: block;
+  top: 100%;  /* ドロップダウンメニューを親メニューの下に表示 */
+  left: 0;  /* 左寄せで表示 */
+}
+
+nav .dropbtn {
+  padding-right: 30px;
+}
+
+/* ドロップダウンの矢印などの装飾を追加する場合 */
+nav .dropdown a::after {
+  content: ' ▼';
+  font-size: 12px;
+}
+
+/* モバイル対応の調整例（必要に応じて） */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;  /* モバイル用に縦並びに変更 */
+  }
+}
