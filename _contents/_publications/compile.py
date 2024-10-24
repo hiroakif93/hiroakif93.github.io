@@ -87,7 +87,7 @@ class RISConverter():
             info += f"({self.ris_dict['PY'][0][0:4]})" + ' '
             info += "<b>" + self.get_title()[0]+ '. ' + "</b>"
             info += "<i>" + self.ris_dict['JO'][0]+ '. </i>'
-            info += self.ris_dict['DO'][0]+ '. '
+            info += f"<a href='https://doi.org/{self.ris_dict['DO'][0]}'>{self.ris_dict['DO'][0]}</a>"+ '. '
             
             publications[pub_order] = info
         

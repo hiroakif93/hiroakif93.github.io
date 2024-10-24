@@ -4,7 +4,7 @@
     width: 60%;           
     max-width: 1200px;    
     margin: 0 auto;       
-    padding: 20px;
+    padding: 20px ;
 }
   
 .pub li {
@@ -21,6 +21,7 @@ ol {
   list-style-type:none;
   text-indent: -20px;
   background-color: #f2f2f2;
+  padding: 2% 5%;
 }
 
 ol li::before {
