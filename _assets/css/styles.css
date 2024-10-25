@@ -14,8 +14,7 @@ header {
   display: flex; /* フレックスボックスを使用 */
   justify-content: flex-end; /* 右寄せに配置 */
   background-color: #f8f9fa; /* 背景色を設定 */
-  padding: 2px; /* パディングを設定 */
-  margin-right: 2%;
+  padding: 5px 30px 5px 0;  /* パディングを設定 */
 }
 
 .lang a {
@@ -50,5 +49,5 @@ header {
   body {
     font-size: 90%;
   }
-  
+
 }
