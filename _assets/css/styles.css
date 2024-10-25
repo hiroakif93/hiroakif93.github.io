@@ -46,3 +46,9 @@ header {
       padding: 10px;       /* パディングをさらに減らす */
       font-size: 14px;     /* フォントサイズをさらに小さくする */
   }
+
+  body {
+    font-size: 90%;
+  }
+  
+}

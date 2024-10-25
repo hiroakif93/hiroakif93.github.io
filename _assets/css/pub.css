@@ -49,3 +49,28 @@ ol li::before {
 .pubtop:hover {
   background-color: #4c7fafde;
 }
+
+@media (max-width: 767px) {
+
+  .pub {
+    font-family: Nanum Gothic;
+    width: 80%;           
+    max-width: 1200px;    
+    margin: 0 auto;       
+    padding: 20px ;
+  }
+
+  .pubtop {
+    display: inline-block; /* インラインブロックで表示 */
+    align-items: center;
+    padding: 10px 20px; /* 上下の余白10px、左右の余白20px */
+    margin-top: 2%;
+    margin-left: 10%;
+    background-color: #4c72af; /* ボタンの背景色 */
+    color: white; 
+    text-decoration: none; 
+    border-radius: 25px;
+    font-size: 16px; 
+    transition: background-color 0.3s;
+  }
+}

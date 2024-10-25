@@ -62,7 +62,7 @@ main p {
 
 
 .container {
-  font-family: 'Roboto Mono', sans-serif
+  font-family: 'Roboto Mono', sans-serif;
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 80%;
