@@ -34,18 +34,40 @@
   }
 </script>
 
-<nav>
-  <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-    <ul id="nav-menu">
-      <li><a href="{{ "/" | relative_url }}">Home</a></li>
-      <li><a href="{{ "/about/index.html" | relative_url }}">About</a></li>
-      <li><a href="{{ "/Publications/index.html" | relative_url }}">Publication</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropbtn">Documents</a>
-        <ul class="dropdown-content">
-          <li><a href="{{ "/_contents/documents/r" | relative_url }}">R</a></li>
-          <li><a href="{{ "/_contents/documents/bioinfo" | relative_url }}">Bioinfo</a></li>
-        </ul>
-      </li>
-    </ul>
-</nav>
+{%- if page.lang == "en" -%}
+
+  <nav>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+      <ul id="nav-menu">
+        <li><a href="{{ "/" | relative_url }}">Home</a></li>
+        <li><a href="{{ "/about/index.html" | relative_url }}">About</a></li>
+        <li><a href="{{ "/Publications/index.html" | relative_url }}">Publication</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Documents</a>
+          <ul class="dropdown-content">
+            <li><a href="{{ "/_contents/documents/r" | relative_url }}">R</a></li>
+            <li><a href="{{ "/_contents/documents/bioinfo" | relative_url }}">Bioinfo</a></li>
+          </ul>
+        </li>
+      </ul>
+  </nav>
+  
+  {%- else -%}
+
+  <nav>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+      <ul id="nav-menu">
+        <li><a href="{{ "/index_jp.html" | relative_url }}">Home</a></li>
+        <li><a href="{{ "/about_jp/index.html" | relative_url }}">About</a></li>
+        <li><a href="{{ "/publications_jp/index.html" | relative_url }}">Publication</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Documents</a>
+          <ul class="dropdown-content">
+            <li><a href="{{ "/_contents/documents/r" | relative_url }}">R</a></li>
+            <li><a href="{{ "/_contents/documents/bioinfo" | relative_url }}">Bioinfo</a></li>
+          </ul>
+        </li>
+      </ul>
+  </nav>
+
+{%- endif -%}
