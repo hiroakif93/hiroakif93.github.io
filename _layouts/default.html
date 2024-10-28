@@ -26,20 +26,8 @@
   <body>
     
     <!-- Language switcher  -->
-    <header class="lang">
-        <a href="index.html">English</a>/<a href="index_jp.html">日本語</a>
-    </header>
-
-    <header>
-        {%- if page.lang == "jp" -%}
-            {%-   assign root_path = "/index_jp.html" -%}
-            {%-   assign lang_change_path = "/" -%}
-            {%-   assign lang_change_title = "English" -%}
-          {%- else -%}
-            {%-   assign root_path = "/" -%}
-            {%-   assign lang_change_path = "/index_jp.html" -%}
-            {%-   assign lang_change_title = "日本語" -%}
-        {%- endif -%}
+    {% include lang.html %}
+    <header>        
         {% include navbar.html %}
     </header>
 

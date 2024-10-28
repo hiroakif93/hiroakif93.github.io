@@ -3,6 +3,7 @@ html, body {
   margin: 0;
   width: 100%;
   overflow-x: hidden;
+  background-color: #f0ecec5d;
 }
 
 header {
@@ -13,7 +14,7 @@ header {
 .lang {
   display: flex; /* フレックスボックスを使用 */
   justify-content: flex-end; /* 右寄せに配置 */
-  background-color: #f3f3f3; /* 背景色を設定 */
+  background-color: #cee9e480; /* 背景色を設定 */
   padding: 5px 30px 5px 0;  /* パディングを設定 */
 }
 

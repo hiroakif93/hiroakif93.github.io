@@ -1,15 +1,15 @@
 nav {
   position: relative;
   text-align: center;
-  border-bottom: 1.5px solid #c9c9c9;
-  border-top: 0.6px solid #c9c9c9;
+  border-bottom: 2.5px solid #066856df;
+  border-top: 3.0px solid #066856df;
 }
 
 nav ul {
   list-style-type: none; /* リストマーカーを削除 */
   padding: 0 0;
   margin: 0 0;
-  background-color: #eaeef3;
+  background-color: #012821d4;
 }
 
 nav ul li {
@@ -17,6 +17,7 @@ nav ul li {
   display: inline-block; /* インラインブロックで横並びに */
   width: 12%;
   margin-right: 0;
+  
 }
 
 nav > ul > li:not(:last-child){
@@ -26,10 +27,12 @@ nav > ul > li:not(:last-child){
 nav ul li a {
   display: block;
   padding: 15px 0;
-  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
   text-align: center;
   text-decoration: none;
-  }
+}
   
 
 nav ul li.current a{
@@ -93,8 +96,8 @@ nav .show > ul {
 @media screen and (max-width: 800px) {
   .menu-icon {
     display: block;  /* 小さい画面では表示 */
-    border-bottom: 1.2px solid #c9c9c9;
-    background-color: #eaeef3;
+    background-color: #01282100;
+    color: white;
     padding-left: 5%;
   }
 
@@ -103,7 +106,7 @@ nav .show > ul {
     border-top: 0.6px solid #c9c9c9;
     border-bottom: 1.5px solid #c9c9c9;
     display: flex;
-    background-color: #eaeef3;
+    background-color: #012821d4;
   }
 
   nav ul {
@@ -120,14 +123,14 @@ nav .show > ul {
 
   nav > ul > li {
     height: 200%;
-    padding-left: 10pt;
-    border-bottom: 1.0px dashed #c9c9c9;
+    padding-left: 10pt;    
     width: 100%;
     text-align: left;
   }
 
   nav > ul > li:not(:last-child){
     border-right:0 solid #ddd;
+    border-bottom: 1.0px dashed #c9c9c9;
   }
 
   nav ul.show {
@@ -143,7 +146,7 @@ nav .show > ul {
   nav ul ul {
     display: none;  /* 初期状態で非表示 */
     position: absolute;
-    background-color: #f8f9fa;
+    background-color: #f7feff;
     min-width: 150px;  /* メニューの幅を指定 */
     left: 0;
     top: 100%;
