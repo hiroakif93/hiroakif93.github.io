@@ -1,9 +1,9 @@
 
 title: Hiroaki Fujita's Website
 email: fujita.hiroaki.3x@kyoto-u.ac.jp
-domain: hiroakif93.github.io
+domain: hiroakifujita
 baseurl: ""
-url: https://hiroakif93.github.io # the base hostname & protocol for your site, e.g. http://example.com
+url: https://hiroakifujita 
 github_username:  hiroakif93
 
 # Build settings
