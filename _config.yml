@@ -21,3 +21,8 @@ affiliation:
   - Center for Living Systems Information Science (CeLiSIS),
   - Kyoto University.
 
+sidebar:
+  position: left
+  display: post
+  - R
+    
