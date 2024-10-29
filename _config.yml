@@ -16,13 +16,6 @@ include:
   - _assets
   - _publications
 
-contents:
-  - About
-  - Publication
-  - Documents:
-    - R
-    - Bioinfo
-
 affiliation:
   - Graduate School of Biostudies,
   - Center for Living Systems Information Science (CeLiSIS),
