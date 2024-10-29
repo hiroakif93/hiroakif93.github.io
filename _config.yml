@@ -3,7 +3,7 @@ title: Hiroaki Fujita's Website
 email: fujita.hiroaki.3x@kyoto-u.ac.jp
 domain: hiroakif93.github.io
 baseurl: ""
-url: https://hiroakif93.github.io 
+url: "" 
 github_username:  hiroakif93
 
 # Build settings
@@ -15,3 +15,17 @@ include:
   - _contents
   - _assets
   - _publications
+
+contents:
+  - Home
+  - About
+  - Publication
+  - Documents:
+    - R
+    - Bioinfo
+
+affiliation:
+  - Graduate School of Biostudies,
+  - Center for Living Systems Information Science (CeLiSIS),
+  - Kyoto University.
+

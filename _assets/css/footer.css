@@ -18,3 +18,8 @@ footer > * {
     flex: 1; /* 各列を均等に配置 */
     margin: 0 15px /* 列の間に少しマージンを追加 */
 }
+
+.affiliation li {
+    list-style-type:none;
+    margin-bottom: 5px;
+}

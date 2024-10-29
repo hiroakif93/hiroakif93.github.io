@@ -6,11 +6,11 @@
 
 <footer>
     
-    <div class="institute">
-        <p>Copyright 2024, Hiroaki Fujita.</p>
-        <li>Graduate School of Biostudies,</li>
-        <li>Center for Living Systems Information Science (CeLiSIS),</li>
-        <li>Kyoto University.</li> 
+    <div class="affiliation">
+        <p>Copyright 2024, Hiroaki Fujita.</p>        
+        {% for aff in site.affiliation %}
+            <li>{{ aff }}</ぃ>
+        {% endfor %}
     </div>
 
     <div class="links">
