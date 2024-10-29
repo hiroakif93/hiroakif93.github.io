@@ -11,12 +11,31 @@ header {
   width: 100%;
 }
 
-.lang {
+.title {
   display: flex; /* フレックスボックスを使用 */
-  justify-content: flex-end; /* 右寄せに配置 */
+  justify-content: flex-start;
+}
+
+.header1 {
+  display: flex; /* フレックスボックスを使用 */
+  justify-content: space-between;
+  align-items: center;
   background-color: #012821d4; /* 背景色を設定 */
-  padding: 5px 30px 5px 0;  /* パディングを設定 */
+  padding: 5px 0px 5px 0;  /* パディングを設定 */
   color: rgb(255, 255, 255);
+}
+
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.lang {
+  font-weight: bold;
+  margin: 0;
+  padding: 0 20px;
 }
 
 .lang a {

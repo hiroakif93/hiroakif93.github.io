@@ -1,9 +1,12 @@
-<header class="lang">
-
+<header class="header1">
+    <div class="title">Hiroaki Fujita's Website</div>
     {%- assign go_to_en = page.en_path -%}
     {%- assign en_title = "English " -%}
     {%- assign go_to_jp = page.jp_path -%}
     {%- assign jp_title = " 日本語" -%}
 
-    <a href="{{ go_to_en }}">{{ en_title }}</a>/<a href="{{ go_to_jp }}">{{ jp_title }}</a>
+    <div class="lang">
+        <a href="{{ go_to_en }}">{{ en_title }}</a>/<a href="{{ go_to_jp }}">{{ jp_title }}</a>
+    </div>
+
 </header>

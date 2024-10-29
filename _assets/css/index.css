@@ -21,22 +21,31 @@ main {
 
 main h1 {
     font-family: 'Roboto Mono', sans-serif;
-    font-size: 2em; /* 必要に応じてフォントサイズも調整 */
-    font-weight: 300;
-  
+    font-size: 3em; /* 必要に応じてフォントサイズも調整 */
+    font-weight: 400;
     display: grid;
     place-items: center; /* 水平・垂直の両方で中央配置 */
     height: 20vh;
+    text-shadow: 
+                  -2px -2px 0 #f0ecec5d,
+                  2px -2px 0 #f0ecec5d,
+                  -2px  2px 0 #f0ecec5d,
+                  2px  2px 0 #f0ecec5d;
   }
-  
+
 main p {
   font-family: 'Noto Sans Japanese', sans-serif;
   font-size: 120%; /* 必要に応じてフォントサイズも調整 */
   font-weight: 300;
-
+  font-size: 20pt;
   display: grid;
   place-items: center; /* 水平・垂直の両方で中央配置 */
   height: 10vh;
+  text-shadow: 
+                -2px -2px 0 #f0ecec5d,
+                2px -2px 0 #f0ecec5d,
+                -2px  2px 0 #f0ecec5d,
+                2px  2px 0 #f0ecec5d;
 }
 
 .bg {

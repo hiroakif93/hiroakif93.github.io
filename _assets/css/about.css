@@ -12,14 +12,16 @@ section{
 }
 
 .aboutshortbg  {
-    background-color: #f0f0f0dc;
+    display: flex;
+    justify-content: space-between;
+    background-color: #e8e7e6dc;
     margin-top: -2%;
     padding: 2% 2%;
     border:2px dashed #c7c5c5dc
 }
 
 .careerbg  {
-    background-color: #f0f0f0dc;
+    background-color: #e8e7e6dc;
     margin-top: 2%;
     padding-top: 2%;
     border:2px dashed #c7c5c5dc
@@ -45,6 +47,7 @@ section{
     flex: 1;
     margin-left: 5%;
     margin-right: 2%;
+    margin-top: -1%;
 }
 
 .about img {
@@ -62,7 +65,7 @@ section{
         flex: 1;
         margin-left: 5%;
         margin-right: 2%;
-        margin-top: -10%;
+        margin-top: -2%;
     }
 
     .about .history .career {

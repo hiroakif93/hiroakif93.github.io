@@ -66,7 +66,7 @@ nav ul ul {
 .dropdown-content a {
   color: black;
   border-bottom: 1.6px solid #c9c9c9;
-  width: 100%
+  width: 100%;
 }
 
 .dropdown-content a:hover {
@@ -93,7 +93,7 @@ nav .show > ul {
   padding: 5px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
   .menu-icon {
     display: block;  /* 小さい画面では表示 */
     background-color: #01282100;
