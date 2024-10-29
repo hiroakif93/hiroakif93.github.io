@@ -1,0 +1,43 @@
+.page {
+    display: flex;
+    gap: 20px;
+}
+
+/* サイドバー全体 */
+.sidebar {
+    width: 250px;
+    background-color: #f0f0f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* サイドバーの見出し */
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* リスト項目のスタイル */
+.sidebar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-item {
+    margin-bottom: 10px;
+}
+
+.sidebar-item a {
+    text-decoration: none;
+    color: #0073e6;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.sidebar-item a:hover {
+    color: #005bb5;
+    font-weight: bold;
+}

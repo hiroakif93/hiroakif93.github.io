@@ -1,7 +1,24 @@
 ---
 layout: default
+css: /_assets/css/page.css
 ---
-<h1>{{ page.title }}</h1>
-<div class="content">
-    {{ content }}
-</div>
+
+<body>
+    <div class="page">
+        
+        <aside class="sidebar">
+            <h2>{{ page.docs }}</h2>
+            <ul>
+                {% assign docs = site.data[page.sidebar] %}
+                {% for doc in docs %}
+                    <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </aside>
+
+        <!-- メインコンテンツ -->
+        <main class="page-content">
+            {{ content }}
+        </main>
+    </div>
+</body>

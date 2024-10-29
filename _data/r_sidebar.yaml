@@ -1,0 +1,6 @@
+- title: "Rの基本操作"
+  url: "/_contents/documents/r/start"
+- title: "データフレームの操作"
+  url: "/r/dataframes"
+- title: "グラフの作成"
+  url: "/r/plotting"

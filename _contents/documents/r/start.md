@@ -1,7 +1,10 @@
 ---
-layout: page
+layout:  page
 title: Rのはじめ方
-id: R
+docs: R documents
+sidebar: "r_sidebar"
+css: /_assets/css/page.css
+
 ---
 
 - 必要なもの  

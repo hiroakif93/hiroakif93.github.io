@@ -22,7 +22,5 @@ affiliation:
   - Kyoto University.
 
 sidebar:
-  position: left
-  display: post
-  - R
+  - getting-started
     
