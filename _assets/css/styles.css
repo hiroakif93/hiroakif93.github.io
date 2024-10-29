@@ -32,6 +32,13 @@ header {
   padding: 0 20px;
 }
 
+.title a {
+  text-decoration: none; /* 下線を削除 */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
 .lang {
   font-weight: bold;
   margin: 0;
@@ -73,19 +80,16 @@ header {
     font-size: 90%;
   }
 
-  .lang {
-    display: flex; /* フレックスボックスを使用 */
-    justify-content: flex-end; /* 右寄せに配置 */
+  .header1 {
     background-color: #c3dad5d4; /* 背景色を設定 */
-    padding: 5px 30px 5px 0;  /* パディングを設定 */
-    color: rgb(45, 44, 44);
+    padding: 5px 0px 5px 0;  /* パディングを設定 */
+    color: rgb(0, 77, 54);
   }
   
-  .lang a {
+  .lang a, .title a {
     text-decoration: none; /* 下線を削除 */
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    color: rgb(38, 38, 38);
+    color: rgb(0, 77, 54);
   }
 
 }
