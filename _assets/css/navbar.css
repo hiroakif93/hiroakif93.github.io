@@ -5,26 +5,27 @@ nav {
   border-top: 4.0px solid #0a7965df;
 }
 
-nav ul {
+#nav-menu {
+  display: flex;
+  justify-content: center;
   list-style-type: none; /* リストマーカーを削除 */
-  padding: 0 0;
-  margin: 0 0;
   background-color: #c3dad5d4;
+  margin: 0 0;
 }
 
-nav ul li {
-  position: relative;
-  display: inline-block; /* インラインブロックで横並びに */
-  width: 12%;
-  margin-right: 0;
+#nav-menu li {
+  display: flex;
+  align-items: center; /* 垂直中央揃え */
+  justify-content: center; /* 水平中央揃え *//* インラインブロックで横並びに */
+  padding: 0 25px;
 }
 
-nav > ul > li:not(:last-child){
+#nav-menu li:not(:last-child){
   border-right:3px solid #ffffff;
   }
 
 nav ul li a {
-  display: block;
+  display: flex;
   padding: 15px 0;
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
