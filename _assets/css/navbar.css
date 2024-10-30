@@ -5,27 +5,28 @@ nav {
   border-top: 4.0px solid #0a7965df;
 }
 
-#nav-menu {
+nav ul {
   display: flex;
+  align-items: center;
   justify-content: center;
   list-style-type: none; /* リストマーカーを削除 */
-  background-color: #c3dad5d4;
+  padding: 0 0;
   margin: 0 0;
+  background-color: #c3dad5d4;
 }
 
-#nav-menu li {
-  display: flex;
-  align-items: center; /* 垂直中央揃え */
-  justify-content: center; /* 水平中央揃え *//* インラインブロックで横並びに */
-  padding: 0 25px;
+nav ul li {
+  position: relative;
+  display: inline-block; /* インラインブロックで横並びに */
+  padding: 0 15px;
 }
 
-#nav-menu li:not(:last-child){
+nav > ul > li:not(:last-child){
   border-right:3px solid #ffffff;
   }
 
 nav ul li a {
-  display: flex;
+  display: block;
   padding: 15px 0;
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
@@ -48,12 +49,18 @@ nav ul ul {
   display: none; /* 初期状態でドロップダウンを隠す */
   position: absolute;
   top: 100%; /* 親要素の下に配置 */
+  left: 0;
   padding: 0;
   margin: 0;
   min-width: 100%;
   background-color: #f2f2f288;
   list-style-type: none;
   z-index: 1000; /* 重なり順を指定 */
+}
+
+nav > ul > ul > li{
+  margin: 0 0;
+  padding: 0 0;
 }
 
 .dropdown-content li{
@@ -68,7 +75,6 @@ nav ul ul {
 }
 
 nav .dropbtn {
-  padding-right: 30px;
   width: 100%;
 }
 
@@ -86,6 +92,8 @@ nav .dropbtn {
 }
 
 .dropdown-icon {
+  display: flex;
+  align-items: center;
   margin-left: 5px;
   transition: transform 0.3s ease; /* 開閉時のアニメーション */
 }
@@ -93,11 +101,10 @@ nav .dropbtn {
   transform: rotate(180deg); /* 回転してアイコンを上向きに */
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 799px) {
   .dropdown-content a {
     color: black;
     border-bottom: 1.6px solid #c9c9c9;
-    width: 100%;
   }
 
 }
