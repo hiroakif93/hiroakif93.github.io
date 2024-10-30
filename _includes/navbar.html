@@ -12,7 +12,6 @@
           });
       });
   
-      // ドキュメント内のどこかをクリックしたときにドロップダウンを閉じる
       document.addEventListener('click', function(e) {
           if (!e.target.closest('nav')) {
               document.querySelectorAll('nav .show').forEach(function(openDropdown) {

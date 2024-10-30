@@ -57,13 +57,20 @@ ol li::before {
     width: 80%;           
     max-width: 1200px;    
     margin: 0 auto;       
-    padding: 20px ;
+  }
+
+  .pub li {
+    font-size: 100%;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    margin-right: 3%;
+    line-height: 1.6;
   }
 
   .pubtop {
     display: inline-block; /* インラインブロックで表示 */
     align-items: center;
-    padding: 10px 20px; /* 上下の余白10px、左右の余白20px */
+    padding: 10px 20px; 
     margin-top: 2%;
     margin-left: 10%;
     background-color: #4c72af; /* ボタンの背景色 */
