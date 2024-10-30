@@ -49,10 +49,8 @@ nav ul ul {
   display: none; /* 初期状態でドロップダウンを隠す */
   position: absolute;
   top: 100%; /* 親要素の下に配置 */
-  left: 0;
   padding: 0;
   margin: 0;
-  min-width: 100%;
   background-color: #f2f2f288;
   list-style-type: none;
   z-index: 1000; /* 重なり順を指定 */
@@ -66,7 +64,6 @@ nav > ul > ul > li{
 .dropdown-content li{
   float: none;
   width: 100%;
-  margin: 0;
 }
 
 .dropdown-content a:hover {
@@ -102,9 +99,14 @@ nav .dropbtn {
 }
 
 @media screen and (min-width: 799px) {
-  .dropdown-content a {
-    color: black;
+
+  .dropdown-content li{
+    float: none;
+    width: 100%;
+    box-sizing: border-box;
     border-bottom: 1.6px solid #c9c9c9;
+    border-left: 1.6px solid #c9c9c9;
+    border-right: 1.6px solid #c9c9c9;
   }
 
 }
