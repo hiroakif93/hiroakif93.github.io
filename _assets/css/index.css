@@ -69,29 +69,33 @@ main p {
 }
 
 .container {
-  font-family: 'Roboto Mono', sans-serif;
   display: flex;
   justify-content: space-between;
-  grid-template-columns: 1fr 1fr;
-  width: 90%;
-  margin-top: 50px; /* フッターと被らないように間隔を空ける */
-  position: relative; /* 必要に応じて調整 */
+  width: 80%;
+  margin-top: 50px;
+  position: relative;
   z-index: 1;
   margin: 0 auto;
 }
 
-.left, .right {
+.left, .news {  
+  font-family: 'Roboto Mono', sans-serif;
   padding: 30px;
   margin: 20px;
+  height: 500px;
   box-sizing: border-box;
+  border-radius: 10px;
+  background-color: white;
+  min-width: 50%;
+  text-align: left;
+}
+
+.left h2, .news h2{  
+  color: rgb(0, 77, 54);
 }
 
 .left {
-  text-align: left;
-  border-radius: 10px;
-  background-color: white;
-  min-width:  50%;
-  width: 800px; 
+  width: 70%;
 }
 
 .left > ul > li{
@@ -99,14 +103,10 @@ main p {
 }
 
 .news {
-  text-align: left;
-  border-radius: 10px;
-  background-color: white;
-  min-width:  50%;
-  width: 400px; 
+  width: 30%;
 }
 
-.news ul li{
+.news > ul > li{
   list-style-type: "- ";
 }
 
