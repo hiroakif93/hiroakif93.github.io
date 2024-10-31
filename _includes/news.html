@@ -1,0 +1,19 @@
+{% if page.lang == "jp" %}
+    {% assign news_data = site.data.news_jp %}
+{% else %}
+    {% assign news_data = site.data.news %}
+{% endif %}
+
+<h2>News</h2>
+<ul>
+    {% for item in news_data limit:5 %}
+        <li>
+            {{ item.date }} :
+            {% if item.url %}
+                <a href="{{ item.url }}"><strong>{{ item.title }}</strong></a>
+            {% else %}
+            <strong>{{ item.title }}</strong>
+            {% endif %}<br> {{ item.description }}
+        </li>
+    {% endfor %}
+</ul>

@@ -98,7 +98,7 @@ nav .dropbtn {
   transform: rotate(180deg); /* 回転してアイコンを上向きに */
 }
 
-@media screen and (min-width: 799px) {
+@media screen and (max-width: 1400px) {
 
   .dropdown-content li{
     float: none;

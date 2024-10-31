@@ -98,7 +98,7 @@ main p {
   list-style-type:none;
 }
 
-.right {
+.news {
   text-align: left;
   border-radius: 10px;
   background-color: white;
@@ -106,6 +106,9 @@ main p {
   width: 400px; 
 }
 
+.news ul li{
+  list-style-type: "- ";
+}
 
 @media (max-width: 1000px) {
 
@@ -124,14 +127,14 @@ main p {
     align-items: center;
   }
 
-  .left, .right {
+  .left, .news {
     padding: 30px;
     margin: 20px;
     box-sizing: border-box;
     max-width: 600px;
   }
 
-  .right {
+  .news {
     width: 600px; 
   }
   
@@ -159,7 +162,7 @@ main p {
     font-weight: 300;
   }
 
-  .left, .right {
+  .left, .news {
     padding: 30px;
     margin: 20px;
     box-sizing: border-box;
@@ -184,7 +187,7 @@ main p {
     font-weight: 300;
   }
 
-  .left, .right {
+  .left, .news {
     padding: 30px;
     margin: 20px;
     box-sizing: border-box;
