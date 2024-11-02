@@ -111,7 +111,7 @@ nav .dropbtn {
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 760px) {
   .menu-icon {
     display: block;  /* 小さい画面では表示 */
     background-color: #01282100;

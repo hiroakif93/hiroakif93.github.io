@@ -71,7 +71,7 @@ main p {
 .container {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 90%;
   margin-top: 50px;
   position: relative;
   z-index: 1;
@@ -94,20 +94,15 @@ main p {
   color: rgb(0, 77, 54);
 }
 
-.left {
-  width: 70%;
-}
 
-.left > ul > li{
-  list-style-type:none;
+.left  ul, .news ul{
+  list-style-type: none;
+  margin-left:  25px;
+  padding-left: 0;
 }
 
 .news {
   width: 30%;
-}
-
-.news > ul > li{
-  list-style-type: "- ";
 }
 
 @media (max-width: 1000px) {
@@ -132,6 +127,8 @@ main p {
     margin: 20px;
     box-sizing: border-box;
     max-width: 600px;
+    width: 100%;
+    height: 100%;
   }
 
   .news {
@@ -192,6 +189,8 @@ main p {
     margin: 20px;
     box-sizing: border-box;
     max-width: 350px;
+    width: 100%;
+    height: 100%;
   }
 
 }
