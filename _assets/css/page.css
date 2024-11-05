@@ -41,3 +41,11 @@
     color: #005bb5;
     font-weight: bold;
 }
+
+code {
+    font-size: 1.5em;  
+}
+
+img {
+    cursor: zoom-in;
+  }
