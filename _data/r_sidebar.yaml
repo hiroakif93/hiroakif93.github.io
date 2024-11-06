@@ -1,6 +1,6 @@
 - title: "Rの動かし方"
   url: "/_contents/documents/r/start"
 - title: "オブジェクトと型"
-  url: "/r/dataframes"
+  url: "/r/obejct_class"
 - title: "ファイルの読み込み"
-  url: "/r/plotting"
+  url: "/r/read_file"
