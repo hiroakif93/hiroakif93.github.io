@@ -18,12 +18,16 @@ css: /_assets/css/page.css
   
 ***  
 ## 絶対パスと相対パス
+
+***  
+
 ## Working directoryとは
 現在、Rが開いているフォルダ（ディレクトリ）のこと.
 
 Working directoryのファイルは、フォルダ名を明記しなくても読み込める.  
 他のディレクトリにあるファイルを開くには、<b>相対パス</b>で指定する必要がある。
 
+***  
 
 ## Working directoryの確認
 
@@ -33,6 +37,7 @@ getcwd()
 ```
 結果は、`/home/user/Desktop`　という形で返される.  
 
+***  
 
 ## Working directoryの設定
 読み込みたいファイルがWorking directoryにない場合、そのファイルが入っているフォルダへ移動すると便利である.
