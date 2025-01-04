@@ -17,15 +17,17 @@ css: /_assets/css/page.css
 
 <body>
     <div class="page">
-        
+
         <aside class="sidebar">
-            <h2>{{ page.docs }}</h2>
-            <ul>
-                {% assign docs = site.data[page.sidebar] %}
-                {% for doc in docs %}
-                    <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
-                {% endfor %}
-            </ul>
+            <button class="sidebar-toggle"></button>
+                <h2>{{ page.docs }}</h2>
+                <ul>
+                    {% assign docs = site.data[page.sidebar] %}
+                    {% for doc in docs %}
+                        <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </button>
         </aside>
 
         <!-- メインコンテンツ -->
