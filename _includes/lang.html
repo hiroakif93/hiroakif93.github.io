@@ -5,10 +5,10 @@
     {%- assign go_to_jp = page.jp_path -%}
     {%- assign jp_title = " 日本語" -%}
 
-    {%- if page.lang == "en" -%}
-        {%- assign home = "/" | relative_url -%}
+    {%- if page.lang == "en" -%}        
+        {%- assign home = "/index_en.html" | relative_url -%}
     {%- else -%}
-        {%- assign home = "/index_jp.html" | relative_url -%}
+        {%- assign home = "/" | relative_url -%}   
     {%- endif -%}
 
     <div class="title">
