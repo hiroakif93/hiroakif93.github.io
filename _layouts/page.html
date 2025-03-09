@@ -15,21 +15,31 @@ css: /_assets/css/page.css
     </script>
 </head>
 
+<script>
+
+    var toggleBtn = document.querySelector('.sidebar-toggle');
+    var sidebar = document.querySelector('.sidebar');
+
+    toggleBtn.addEventListener('click', function() {
+    toggleBtn.classList.toggle('is-closed');
+    sidebar.classList.toggle('is-closed');
+    })
+
+</script>
+
 <body>
     <div class="page">
 
         <aside class="sidebar">
-            <button class="sidebar-toggle"></button>
                 <h2>{{ page.docs }}</h2>
                 <ul>
                     {% assign docs = site.data[page.sidebar] %}
                     {% for doc in docs %}
                         <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
                     {% endfor %}
-                </ul>
-            </button>
+                </ul>            
         </aside>
-
+        
         <!-- メインコンテンツ -->
         <main class="page-content">
             {{ content }}

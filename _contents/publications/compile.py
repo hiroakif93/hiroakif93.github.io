@@ -1,5 +1,5 @@
 import sys,os,glob
-path='/Users/hiroakifujita/works/HOMEPAGE/_contents/_publications'
+path='/Users/hiroakifujita/works/HOMEPAGE/_contents/publications'
 output='/Users/hiroakifujita/works/HOMEPAGE/_includes'
 
 class RISConverter():
@@ -74,7 +74,7 @@ class RISConverter():
         publications = {}                        
         cnt = 1
         for i in files:
-            
+            print(i)
             self.read_ris(i)
             self.convert_author()
             if 'DO' not in self.ris_dict.keys():            
