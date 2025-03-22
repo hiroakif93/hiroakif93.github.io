@@ -18,7 +18,7 @@
 {%- if page.lang == "ja" -%}        
       {%- assign lang = "ja" -%}
   {%- else -%}
-      {%- assign l = "en" -%}   
+      {%- assign lang = "en" -%}   
 {%- endif -%}
 
 <!-- Main -->
@@ -34,19 +34,20 @@
 
             <ul>
             {% for content in item.content %}
-              {% if content.lang == lang %}
+              {% if page.lang == lang %}
                 <li><a href="{{ content.link | relative_url }}">{{ content.name }}</a></li>
               {% endif %}
             {% endfor %}
             </ul>
           </li>
+          
       {% else %}
 
           <!-- Main contents -->
-          {% if item.lang == lang %}
-            <li><a href="{{ item.url_jp | relative_url }}">{{ item.name }}</a></li>
+          {% if page.lang == "ja" %}
+            <li><a href="{{ item.ja | relative_url }}">{{ item.name }}</a></li>
           {% else %}
-            <li><a href="{{ item.url_en | relative_url }}">{{ item.name }}</a></li>
+            <li><a href="{{ item.en | relative_url }}">{{ item.name }}</a></li>
           {% endif %}
 
       {% endif %}

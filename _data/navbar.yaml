@@ -1,12 +1,12 @@
 - name: Home
-  jp: /
+  ja: /
   en: /index_en.html
 - name: About
-  jp: /_contents/about.html 
-  en: /_contents/about_en.html
+  ja: /_contents/about/about.html 
+  en: /_contents/about/about_en.html
 - name: Publication
-  jp: /_contents/publication.html
-  en: /_contents/publication_en.html
+  ja: /_contents/publications/index.html
+  en: /_contents/publications/index_en.html
 - name: Documents
   content: 
     - name: R
@@ -14,5 +14,5 @@
     - name: Bioinfo
       link: /_contents/bioinfo.html
 - name: Blog
-  jp: https://alhazerd-fx.hatenablog.com/
+  ja: https://alhazerd-fx.hatenablog.com/
   en: https://alhazerd-fx.hatenablog.com/

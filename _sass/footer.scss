@@ -5,7 +5,7 @@ footer {
     text-align: left; 
     border-top: 4.5px solid #bcc3c2d4; /* 上に罫線を追加 */
     padding: 20px 0;
-    margin-top: 20px; 
+    margin-top: 100px; 
     width: 100%;
     position: relative; /* フッターが上に重ならないように */
     bottom: 0;
@@ -16,7 +16,7 @@ footer {
 
 footer > * {
     flex: 1; /* 各列を均等に配置 */
-    margin: 0 15px /* 列の間に少しマージンを追加 */
+    margin: 0 25px /* 列の間に少しマージンを追加 */
 }
 
 .affiliation li {

@@ -1,9 +1,12 @@
 :root {
   --theme-main-color: rgb(0, 62, 43);;
   --theme-sub-color: #c3dad5d4;
+  --theme-sub-color-dark: rgba(118, 136, 132, 0.511);
   --background-color: rgb(250, 245, 235);
+  --box-color: rgba(251, 248, 243, 0.655);
   --border-color: rgb(4, 165, 116);
   --border-width: 2px;
+  --border-style: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -13,10 +16,17 @@ body {
     max-width: 100%;
     font-weight: 400;
     font-style: normal;
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2{
   font-family: 'Zen Kaku Gothic New', sans-serif;
   font-weight: 600;
+}
+
+a {
+  text-decoration: none; 
+  color: var(--theme-main-color);
 }
 

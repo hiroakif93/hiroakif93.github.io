@@ -1,0 +1,56 @@
+@mixin box-style($boxcolor: var(--box-color), $border-style: var(--border-style)) {
+    background-color: $boxcolor;
+    margin-top: 0;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 2px;
+    box-shadow: $border-style;
+  }
+
+img {
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 0;
+    border-radius: 5%;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.about {
+    margin: 0;
+    padding: 0 10rem ;
+
+    hr {
+        border-top: 2px double var(--theme-sub-color-dark);
+        position: relative;
+        width: 80%;
+        z-index: -1; 
+    }
+
+    h2 {
+        margin-bottom: 0;
+    }
+    .short {
+        margin-bottom: 0;
+        ul { 
+            @include box-style(); 
+            font-size: 1.2rem;
+            list-style-type: none;
+
+            li {
+                padding-bottom: 0.5rem;
+            }
+        }
+    }
+    .career {
+        margin-top: 0;
+        ul { 
+            @include box-style();
+            font-size: 1.2rem;
+            list-style-type: disc;
+            li {
+                padding-bottom: 0.5rem;
+            }
+        }
+    }
+}

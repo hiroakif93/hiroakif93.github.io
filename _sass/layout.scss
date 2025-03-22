@@ -9,17 +9,12 @@
   grid-template-rows: auto 1fr 100px;
   min-height: 100vh;
   row-gap: 0;
+}
 
-  .header {
-    grid-area: header;    
-  }
-
-  .main {
-    grid-area: main;
-  } 
-
-  .footer {
-    grid-area: footer;
+$areas: header, main, footer;
+@each $area in $areas {
+  .#{$area} {
+    grid-area: #{$area};
   }
 }
 
@@ -53,3 +48,22 @@
         align-items: center;
     }
   }
+
+/* about.html */
+.profile {
+    display: grid;
+
+    grid-template-areas   : 
+        "short short photo"
+        "career career career";
+    grid-template-columns: 500px 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 20px;
+}
+
+$mayselfareas: short, photo, career;
+@each $area in $mayselfareas {
+    .#{$area} {
+        grid-area: #{$area};
+    }
+}  

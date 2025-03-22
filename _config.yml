@@ -17,8 +17,11 @@ sass:
   sass_dir: _sass
   style: compressed
 
-# include:
-
+include:
+  - _contents
+  - _contents/about
+  - _contents/publications
+  
 affiliation:
   - Graduate School of Biostudies,
   - Center for Living Systems Information Science (CeLiSIS),

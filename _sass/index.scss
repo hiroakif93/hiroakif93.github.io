@@ -1,3 +1,13 @@
+@mixin box-style($boxcolor: var(--box-color), $border-style: var(--border-style)) {
+    background-color: $boxcolor;
+    margin-top: 0;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 2px;
+    box-shadow: $border-style;
+  }
+
 .index {
     position: relative; /* 相対位置を指定 */
     width: 100%; /* 幅を100%に設定 */
@@ -6,18 +16,29 @@
     background-repeat: no-repeat; /* 画像を繰り返さない */
     background-size: auto; /* 高さを100%にし、幅は自動調整 */
 
-   h2, h3, h4 {
+    padding-left: 2rem;
+    padding-right: 0;
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2, h3, h4 {
         margin-bottom: 0;
     }
 
     ul {
-        background-color: rgba(251, 248, 243, 0.61);
-        margin-top: 0;
-        padding-left: 2rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        border-radius: 2px;
-        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        @include box-style();
+        font-size: 1.2rem;
+    }
+    
+    hr {
+        margin: 2rem 0;
+        position: relative;
+        right: 30%;
+        width: 100%;
+        border-top: 5px double var(--theme-sub-color-dark);
+        z-index: -1; 
     }
 
 }
@@ -29,21 +50,16 @@
     justify-content: stretch;
     column-gap: 50px;
 }
-hr {
-    position: relative;
-    right: 30%;
-    width: 100%;
-    height: 1px;
-    background-color: #000000c7; /* 区切り線の色 */
-    border: none;
-    z-index: -1; /* 区切り線を画像の後ろに配置 */
-}
 
 .myself {
     display: block;
     padding-bottom: 1rem;
     margin-top: 1rem;
     width: 40%;
+
+    li {
+        padding-bottom: 0.5rem;
+    }
 }
 
 .news {
@@ -51,15 +67,7 @@ hr {
     padding-bottom: 1rem;
     margin-top: 1rem;
     
-    width: 60%;
+    width: 50%;
 
-    ul {
-        background-color: rgba(251, 248, 243, 0.61);
-        margin-top: 0;
-        padding-left: 2rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        border-radius: 2px;
-        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-    }
+    ul {  @include box-style(); }
 }

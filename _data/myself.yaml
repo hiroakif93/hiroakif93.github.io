@@ -1,9 +1,25 @@
-- current: 
-  ja: 藤田 博昭
-  en: Hiroaki Fujita
-- doctor: 
-  ja:  理学博士 （京都大学,　2023年）
-  en: Doctor of Science (Kyoto University, 2023)
-- affiliation: 
-  ja: 助教（京都大学 生命科学研究科）
-  en: Assistant Professor (Department of Life Sciences, Kyoto University)
+short:
+  - name:
+    ja: 藤田 博昭
+    en: Hiroaki Fujita
+  - doctor: 
+    ja:  理学博士 （京都大学,　2023年）
+    en: Doctor of Science (Kyoto University, 2023)
+  - affiliation: 
+    ja: 助教（京都大学 生命科学研究科）
+    en: Assistant Professor (Department of Life Sciences, Kyoto University)
+history:
+  ja: 
+    - 2024年4月 - 現在： 京都大学 生命科学研究科 助教
+    - 2023年4月 - 2024年3月： IQVIA Solutions Japan 合同会社 データサイエンティスト
+    - 2020年4月 - 2023年3月： 日本学術振興会 特別研究員（DC1）
+    - 2020年4月 - 2023年3月： 京都大学 博士後期課程
+    - 2018年4月 - 2020年3月： 京都大学 博士前期課程
+    - 2014年4月 - 2018年3月： 大阪府立大学 現代システム科学域 環境システム学類
+  en:
+    - 2024.Apr. - : Assistant Professor (Department of Life Sciences, Kyoto University)
+    - 2023.Apr. - 2024.Mar.: Data Scientist (IQVIA Solutions Japan)
+    - 2020.Apr. - 2023.Mar.: JSPS research fellow（DC1）
+    - 2020.Apr. - 2023.Mar.: Ph.D. candidate (Department of Life Sciences, Kyoto University)
+    - 2018.Apr. - 2020.Mar.: M.S. candidate (Department of Life Sciences, Kyoto University)
+    - 2014.Apr. - 2018.Mar.: Department of Environmental Systems, Osaka Prefectural University

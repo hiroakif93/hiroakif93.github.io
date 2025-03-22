@@ -1,0 +1,65 @@
+---
+layout: default
+---
+
+<article class="about">
+    <h1>{{ page.title }}</h1>
+    <section class="profile">
+
+        <div class="short">
+            {% if page.lang == "ja" %}
+                <h2>自己紹介</h2>
+            {% else %}
+                <h2>My Profile</h2>
+            {% endif %}
+            <ul>
+                {% for item in site.data.myself.short %}
+                    {% if page.lang == "ja" %}
+                        <li>{{ item.ja }}</li>
+                    {% else %}
+                        <li>{{ item.en }}</li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+        
+        <aside class="photo">
+            <img src="{{ site.baseurl}}/assets/images/myphoto.jpg" alt="プロフィール写真"> 
+        </aside>
+
+        <div class="career">
+            {% if page.lang == "ja" %}
+                <h2>経歴</h2>
+            {% else %}
+                <h2>Career</h2>
+            {% endif %}
+            <ul>            
+                {% if page.lang == "ja" %}
+                    {% for item in site.data.myself.history.ja %}   
+                        <li>{{ item }}</li>
+                    {% endfor %}
+                {% else %}
+                    {% for item in site.data.myself.history.ja %}   
+                        <li>{{ item }}</li>
+                    {% endfor %}
+                {% endif %}            
+            </ul>
+        </div>
+
+    </section>
+
+</article>
+
+<hr>
+
+<!--
+<div class="research">
+
+  <h1>研究</h1>
+  <hr>
+  <h2>細菌群集動態の安定性と予測</h2>
+  <h2>細菌群集の安定状態</h2>
+
+</div>
+
+--> 
