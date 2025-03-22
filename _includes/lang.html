@@ -1,9 +1,9 @@
-<header class="header1">
-    
+
+<!-- Configs -->
     {%- assign go_to_en = page.en_path -%}
     {%- assign en_title = "English " -%}
-    {%- assign go_to_jp = page.jp_path -%}
-    {%- assign jp_title = " 日本語" -%}
+    {%- assign go_to_ja = page.ja_path -%}
+    {%- assign ja_title = " 日本語" -%}
 
     {%- if page.lang == "en" -%}        
         {%- assign home = "/index_en.html" | relative_url -%}
@@ -11,11 +11,12 @@
         {%- assign home = "/" | relative_url -%}   
     {%- endif -%}
 
-    <div class="title">
-        <a href="{{ home }}">Hiroaki Fujita's Website</a>
-    </div>
+<!-- Main -->
+<div class="layout_lang">
+    <a class="title" href="{{ home }}">Hiroaki Fujita's Website</a>
     <div class="lang">
-        <a href="{{ go_to_en }}">{{ en_title }}</a>/<a href="{{ go_to_jp }}">{{ jp_title }}</a>
+        <a href="{{ go_to_en }}">{{ en_title }}</a>/<a href="{{ go_to_ja }}">{{ ja_title }}</a>
     </div>
+</div>
+    
 
-</header>

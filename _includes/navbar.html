@@ -1,95 +1,55 @@
-<script>
-  // ハンバーガーメニューを開閉する関数
-  function toggleMenu() {
-    var navMenu = document.getElementById("nav-menu");
-    navMenu.classList.toggle("show");
-  }
 
-  // ドロップダウンメニューを開閉する関数
-  function toggleDropdown(event) {
-    event.preventDefault();
-    var dropdownContent = event.target.nextElementSibling;
-    var icon = event.target.querySelector('.dropdown-icon');
+<script type="text/javascript">
+  $(function(){
+    
+    $("ul.dropdown li").click(function(e){
+      e.stopPropagation(); 
+      $(this).siblings().find("ul").slideUp(150); 
+      $(this).children("ul").slideToggle(150); 
+    });
 
-    dropdownContent.classList.toggle("show");
-    icon.classList.toggle("rotate");
-  }
-
-  // メニュー外をクリックしたら閉じる
-  document.addEventListener("click", function (event) {
-    var navMenu = document.getElementById("nav-menu");
-    var menuIcon = document.querySelector(".menu-icon");
-
-    // クリックされた要素がメニューアイコンまたはメニュー内でなければ閉じる
-    if (!navMenu.contains(event.target) && !menuIcon.contains(event.target)) {
-        navMenu.classList.remove("show");
-        // ドロップダウンが開いている場合も閉じる
-        document.querySelectorAll(".dropdown-content").forEach(function (dropdown) {
-            dropdown.classList.remove("show");
-        });
-        // アイコンの回転もリセット
-        document.querySelectorAll(".dropdown-icon").forEach(function (icon) {
-            icon.classList.remove("rotate");
-        });
-    }
+    $('html').click(function() {
+      $('ul.dropdown ul').slideUp(150);
+    });
   });
-
-
-// 他の場所をクリックしたときにドロップダウンを閉じる
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        for (var i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
-    }
-};
 </script>
 
-
-{%- if page.lang == "en" -%}
-
-  <nav>
-    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-    <ul id="nav-menu">
-        <li><a href="{{ "/index_en.html" | relative_url }}">Home</a></li>
-        <li><a href="{{ "/about/index.html" | relative_url }}">About</a></li>
-        <li><a href="{{ "/publications/index.html" | relative_url }}">Publication</a></li>
-        <li class="dropdown">
-            <a href="#" class="dropbtn" onclick="toggleDropdown(event)">
-              Documents<i class="fas fa-caret-down dropdown-icon"></i>
-            </a>
-            <ul class="dropdown-content">
-                <li><a href="{{ "/_contents/documents/r/r.html" | relative_url }}">R</a></li>
-                <li><a href="{{ "/_contents/documents/bioinfo" | relative_url }}">Bioinfo</a></li>
-            </ul>
-        </li>
-        <li><a href="https://alhazerd-fx.hatenablog.com/">Blog</a></li>
-    </ul>
-  </nav>
-  
+<!-- lang swithch -->
+{%- if page.lang == "ja" -%}        
+      {%- assign lang = "ja" -%}
   {%- else -%}
-
-  <nav>
-    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-    <ul id="nav-menu">
-      <li><a href="{{ "/" | relative_url }}">Home</a></li>
-        <li><a href="{{ "/about_jp/index.html" | relative_url }}">About</a></li>
-        <li><a href="{{ "/publications_jp/index.html" | relative_url }}">Publication</a></li>
-        <li class="dropdown">
-            <a href="#" class="dropbtn" onclick="toggleDropdown(event)">
-              Documents<i class="fas fa-caret-down dropdown-icon"></i>
-            </a>
-            <ul class="dropdown-content">
-                <li><a href="{{ "/_contents/documents/r/r.html" | relative_url }}">R</a></li>
-                <li><a href="{{ "/_contents/documents/bioinfo" | relative_url }}">Bioinfo</a></li>
-            </ul>
-        </li>
-        <li><a href="https://alhazerd-fx.hatenablog.com/">Blog</a></li>
-    </ul>
-  </nav>
-
+      {%- assign l = "en" -%}   
 {%- endif -%}
+
+<!-- Main -->
+<nav class="layout_navbar">
+  <ul class="dropdown">
+    {% for item in site.data.navbar %}
+
+      {% if item.content %}
+
+          <!-- Dropdown -->
+          <li>
+            <a href="#">{{ item.name }}</a>
+
+            <ul>
+            {% for content in item.content %}
+              {% if content.lang == lang %}
+                <li><a href="{{ content.link | relative_url }}">{{ content.name }}</a></li>
+              {% endif %}
+            {% endfor %}
+            </ul>
+          </li>
+      {% else %}
+
+          <!-- Main contents -->
+          {% if item.lang == lang %}
+            <li><a href="{{ item.url_jp | relative_url }}">{{ item.name }}</a></li>
+          {% else %}
+            <li><a href="{{ item.url_en | relative_url }}">{{ item.name }}</a></li>
+          {% endif %}
+
+      {% endif %}
+    {% endfor %}
+  </ul>
+</nav>

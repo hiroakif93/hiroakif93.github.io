@@ -9,12 +9,15 @@ github_username:  hiroakif93
 # Build settings
 theme: minima
 plugins:
+  - jekyll-feed
   - jekyll-sitemap
+  - jekyll-seo-tag
+  
+sass:
+  sass_dir: _sass
+  style: compressed
 
-include:
-  - _contents
-  - _assets
-  - _publications
+# include:
 
 affiliation:
   - Graduate School of Biostudies,

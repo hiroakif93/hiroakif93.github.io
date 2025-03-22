@@ -1,40 +1,41 @@
 ---
 title: Hiroaki Fujita's Website
 layout: default
-css: /_assets/css/index.css
+description: I am a reseacher of "Ecology fot Microbial community" 
 lang: en
-jp_path: "/index.html"
+ja_path: "/index.html"
 ---
 
-<div class=bg>
+<article class="index">
+    <div class=bg>
 
-    <main>
-        <h1>{{ page.title }}</h1>
-        <p class="home_item">I am a reseacher of "community ecological infomatics".</p> 
-    </main>
-    
-</div>
-
-
-<div class="container">
-
-    <div class="left">
-        <h2>Welcome to website.</h2>
-        <h3>Myself</h3>
-        <ul>
-            I am Hiroaki Fujita Ph.D of Science (Kyoto, Japan, 2023),<br>
-            working with Assistant professor of CeLiSIS in Kyoto Univ.<br>
-            I was a Data Scientist at IQVIA Solutions Japan after that JSPS Research Fellow (DC1) at the Science department of Kyoto University (Japan).
-        </ul>        
-        <h3>My Reseach</h3>
-        <ul>
-            I am currently working on 3 research topics: <br>prediction of microbiome stability, analysis function of fish gut microbiome and interaction in aquatic microbial community.<br>
-            In the future, I'd like to conduct research to elucidate the ecological role of Myxomycetes.
-        </ul>
+        <main>
+            <h1>{{ page.title }}</h1>
+            <h2>{{ page.description }}</h2>         
+        </main>
+        
     </div>
 
-    <div class="news">        
-        {% include news.html %}
-    </div>
+    <div class="container">
 
-</div>
+        <div class="left">
+            <h2>Welcome to my website.</h2>
+            <h3>Myself</h3>
+            <ul>
+                I am Hiroaki Fujita Ph.D of Science (Kyoto, Japan, 2023),<br>
+                working with Assistant professor of CeLiSIS in Kyoto Univ.<br>
+                I was a Data Scientist at IQVIA Solutions Japan after that JSPS Research Fellow (DC1) at the Science department of Kyoto University (Japan).
+            </ul>        
+            <h3>My Reseach</h3>
+            <ul>
+                I am currently working on 3 research topics: <br>prediction of microbiome stability, analysis function of fish gut microbiome and interaction in aquatic microbial community.<br>
+                In the future, I'd like to conduct research to elucidate the ecological role of Myxomycetes.
+            </ul>
+        </div>
+
+        <div class="news">        
+            {% include news.html %}
+        </div>
+
+    </div>
+</article>

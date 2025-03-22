@@ -1,0 +1,51 @@
+.dropdown {
+    background-color: var(--theme-main-color); 
+    margin: 0;
+    
+    li {
+      font-size: 1.2rem;
+      margin: 0;
+      padding: 0.5rem;
+      width: 100%;          
+      display: inline-block; /* ★横並びに配置する */
+      list-style-type: none; /* ★リストの先頭記号を消す */
+      position: relative;
+  
+      li {
+          font-size: 1.1rem;
+          padding-top: 0.5rem;
+      }
+    }
+  
+    a {
+      padding: 0.5rem;
+      margin: 0;
+      color: white;              
+      line-height: 40px;         
+      text-decoration: none;     
+      font-weight: normal;         
+      border-radius: 2px;    
+
+      &:hover {
+        background-color: rgb(132, 192, 174); /* メニュー項目の背景色(濃い赤色) */
+        color: white;              /* メニュー項目の文字色(白色) */
+        line-height: 40px;         /* メニュー項目のリンクの高さ(40px) */
+        text-decoration: none;     /* メニュー項目の装飾(下線を消す) */
+      }
+    }
+  
+    ul {
+      background-color: var(--theme-main-color); 
+      margin: 0px;        
+      padding: 0px;       
+      display: none;      
+      position: absolute; 
+  
+      a {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+    }
+  
+  } 
+  
