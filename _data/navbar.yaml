@@ -10,7 +10,7 @@
 - name: Documents
   content: 
     - name: R
-      link: /_contents/documents.html
+      link: https://hiroakif93.github.io/rwiki/
     - name: Bioinfo
       link: /_contents/bioinfo.html
 - name: Blog
