@@ -1,12 +1,4 @@
-@mixin box-style($boxcolor: var(--box-color), $border-style: var(--border-style)) {
-    background-color: $boxcolor;
-    margin-top: 0;
-    padding-left: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    border-radius: 2px;
-    box-shadow: $border-style;
-  }
+@import "mixin";
 
 .index {
     position: relative; /* 相対位置を指定 */
@@ -20,16 +12,36 @@
     padding-right: 0;
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 220%;
+        @include breakpoint(md) {
+            font-size: 180%;
+        }
+
+        @include breakpoint(sm) {
+            font-size: 140%;
+        }
     }
 
     h2, h3, h4 {
         margin-bottom: 0;
+        font-size: 150%;
+        
+        @include breakpoint(md) {
+            font-size: 130%;
+        }
+
+        @include breakpoint(sm) {
+            font-size: 100%;
+        }
     }
 
     ul {
         @include box-style();
-        font-size: 1.2rem;
+        font-size: 120%;
+
+        @include breakpoint(sm) {
+            font-size: 90%;
+        }
     }
     
     hr {
@@ -46,28 +58,41 @@
 .container {
     display: flex;
     flex-direction: row;
-    align-items: start;
-    justify-content: stretch;
-    column-gap: 50px;
+    align-items: strech;
+    justify-content: strech;
+    column-gap: 5%;
+
+    @include breakpoint(md) {
+        flex-direction: column;
+        row-gap: 2%;
+        justify-content: strech;
+        align-content: strech;
+    }
 }
 
 .myself {
     display: block;
-    padding-bottom: 1rem;
-    margin-top: 1rem;
+    padding-bottom: 5%;
+    margin-top: 2%;
     width: 40%;
 
     li {
         padding-bottom: 0.5rem;
     }
+
+    @include breakpoint(md) {
+        width: 90%;
+    }
 }
 
 .news {
     display: block;
-    padding-bottom: 1rem;
-    margin-top: 1rem;
-    
+    padding-bottom: 5%;
+    margin-top: 2%;
     width: 50%;
-
     ul {  @include box-style(); }
+
+    @include breakpoint(md) {
+        width: 90%;
+    }
 }

@@ -22,7 +22,7 @@
 {%- endif -%}
 
 <!-- Main -->
-<nav class="layout_navbar">
+<nav class="layout_navbar"  id="js-nav">
   <ul class="dropdown">
     {% for item in site.data.navbar %}
 
@@ -53,4 +53,11 @@
       {% endif %}
     {% endfor %}
   </ul>
+
 </nav>
+
+<button class="hamburger"  id="js-hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>

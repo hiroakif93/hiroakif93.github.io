@@ -1,0 +1,22 @@
+
+@mixin box-style($boxcolor: var(--box-color), $border-style: var(--border-style)) {
+    background-color: $boxcolor;
+    margin-top: 0;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 2px;
+    box-shadow: $border-style;
+  }
+
+$breakpoints: (
+  "sm": "screen and (max-width: 640px)",
+  "md": "screen and (max-width: 768px)",
+  "lg": "screen and (max-width: 1280px)",
+);
+
+@mixin breakpoint($breakpoint) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}

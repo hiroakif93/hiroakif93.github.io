@@ -1,3 +1,5 @@
+@import "mixin";
+
 /* default.html */
 .layout_body {
   display: grid;
@@ -19,18 +21,26 @@ $areas: header, main, footer;
 }
 
 /* header */
-  .header {
-      display: flex;
-      flex-direction: column;
-      justify-content: center; 
-      align-items: center;
-      margin: 0;
-      padding: 0;
-      width: 100%;
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 
-  }
+    @include breakpoint(md) {
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+    }
 
-  /* lang.html */
+}
+
+/* lang.html */
   .layout_lang {
     display: flex;
     justify-content: space-between;
