@@ -1,3 +1,5 @@
+@import "mixin";
+
 .layout_lang {
     background-color: var(--theme-sub-color);
 
@@ -16,6 +18,11 @@
             line-height: 40px;  
             text-decoration: none;     
             font-weight: normal; 
+
         }
+    }
+
+    @include breakpoint(sm) {
+        font-size: 80%;
     }
 }
