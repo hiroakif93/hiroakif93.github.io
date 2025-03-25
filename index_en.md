@@ -1,6 +1,6 @@
 ---
 title: Hiroaki Fujita's Website
-description: I am a reseacher of "Ecology fot Microbial community".
+description: I am conducting research on "community dynamics, species interaction network and community stability".
 layout: index
 lang: en
 ja_path: "/index.html"
