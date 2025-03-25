@@ -89,7 +89,12 @@
     padding-bottom: 5%;
     margin-top: 2%;
     width: 50%;
-    ul {  @include box-style(); }
+    ul {  
+        @include box-style();
+        li {
+            margin: 2% 3%;
+        }        
+     }
 
     @include breakpoint(md) {
         width: 90%;
