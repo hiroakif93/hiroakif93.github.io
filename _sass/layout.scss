@@ -10,7 +10,8 @@
     "footer";
   grid-template-rows: auto 1fr 100px;
   min-height: 100vh;
-  row-gap: 0;
+  row-gap: 2%;
+  width: 100%; 
 }
 
 $areas: header, main, footer;
@@ -24,14 +25,14 @@ $areas: header, main, footer;
 .header {
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center;
+    justify-content: space-between; 
+    align-items: stretch;
     margin: 0;
-    padding: 0;
+    padding: 0; 
     width: 100%;
-
+    position: relative;
+  
     @include breakpoint(md) {
-      position: relative;
       top: 0;
       left: 0;
       right: 0;
@@ -44,14 +45,16 @@ $areas: header, main, footer;
   .layout_lang {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     width: 100%;
+    box-sizing: border-box;
   }
 
   /* navbar.html */
   .layout_navbar {
-    padding: 0 1rem;
-    width: 100%;
+    margin-bottom: 10px;
+    background-color: var(--theme-main-color); 
+    box-sizing: border-box;
     ul{
         display: flex;
         justify-content: center;
@@ -59,21 +62,3 @@ $areas: header, main, footer;
     }
   }
 
-/* about.html */
-.profile {
-    display: grid;
-
-    grid-template-areas   : 
-        "short short photo"
-        "career career career";
-    grid-template-columns: 500px 1fr 1fr;
-    grid-template-rows: auto auto;
-    column-gap: 20px;
-}
-
-$mayselfareas: short, photo, career;
-@each $area in $mayselfareas {
-    .#{$area} {
-        grid-area: #{$area};
-    }
-}  

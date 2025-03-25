@@ -11,6 +11,16 @@
     $('html').click(function() {
       $('ul.dropdown ul').slideUp(150);
     });
+
+    const hamburger = document.getElementById("js-hamburger");
+    const dropdown = document.getElementById("js-dropdown");
+
+    if (hamburger && dropdown) {
+      hamburger.addEventListener("click", function(e) {
+        e.stopPropagation();
+        dropdown.classList.toggle("active");
+      });
+    }
   });
 </script>
 
@@ -22,8 +32,15 @@
 {%- endif -%}
 
 <!-- Main -->
-<nav class="layout_navbar"  id="js-nav">
-  <ul class="dropdown">
+<nav class="layout_navbar" id="js-nav">
+  
+  <!-- hamburger -->
+  <button class="hamburger" id="js-hamburger">    
+    <i class="fa-solid fa-bars"></i>
+    <span class="menu-text">Menu</span>
+  </button>
+
+  <ul class="dropdown" id="js-dropdown">
     {% for item in site.data.navbar %}
 
       {% if item.content %}
@@ -55,9 +72,3 @@
   </ul>
 
 </nav>
-
-<button class="hamburger"  id="js-hamburger">
-  <span></span>
-  <span></span>
-  <span></span>
-</button>

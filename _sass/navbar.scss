@@ -1,10 +1,13 @@
 @import "mixin";
+
+$border_style_dark: 4.0px double #0a7965df;
+
 .dropdown {
     background-color: var(--theme-main-color); 
     margin: 0;
     border-bottom: 3.5px solid #bcc3c2d4;
-    border-top: 4.0px solid #0a7965df;
-    
+    border-top: 4.0px double #0a7965df;    
+
     li {
       font-size: 1.2rem;
       margin: 0;
@@ -51,34 +54,75 @@
       }
 
     }
-  
-  } 
-  
+
+} 
+
 /* hamburger */
 .hamburger {
+  display: none;  /* 初期状態では非表示 */
+  font-size: 30px;
+  cursor: pointer;
+  padding: 5px;
+}
 
-  span {
-    width: 100%;
-    height: 1px;
-    background-color: #000;
-    position: relative;
-    transition: ease .4s; /*ハンバーガーメニュークリック時の三本線の動きを遅延*/
-    display: block;
+/* responsive */
+@media (max-width: 768px) {
 
-    :nth-child(1) :nth-child(3) { top: 0;  }
-
-    :nth-child(2) { top: 10px; }
-
+  .layout_navbar {
+    background-color: var(--theme-main-color); 
+    border-bottom: 5.0px solid var(--theme-sub-color);
   }
 
-  @include breakpoint(md) {
-    background-color: transparent;
-    border: none;
-    width: 30px;
-    height: 30px;
+  .layout_navbar > .dropdown {
+    display: none;
+    flex-direction: column;    
+    padding-right: 40%; 
+    padding-bottom: 2%; 
     position: absolute;
-    right: 0;
-    top: 0;
-    
+    border-right: 5.0px double var(--theme-sub-color);
+    border-bottom: 5.0px double var(--theme-sub-color);
+    border-top: none;
+
+    li {
+      padding: 5% 0%;
+    }
+
+    ul {
+      background-color: var(--theme-main-color-transparent); 
+      margin: 0px; 
+      padding-left: 6%;           
+      display: none;      
+      position: absolute; 
+      left: 100%;   
+      top: 0%;      
+
+      a {
+        padding-left: 8%;
+        border-left:5px double #bdbcbc;
+      }
+    }
   }
+
+  .layout_navbar > .dropdown.active {
+    display: flex;
+  }
+  
+  .layout_navbar > .hamburger {
+    display: flex; 
+    flex-direction: row;
+    color: var(--theme-sub-color);
+    border: none;
+    padding: 0% ;
+    margin: 1% ;
+    width: auto;
+  
+    background-color: var( --theme-main-color );    
+    position: relative;
+
+    .menu-text{
+      font-size: 80%;
+      margin-left: 5%;
+    }
+  }
+
 }

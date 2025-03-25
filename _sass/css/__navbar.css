@@ -1,0 +1,186 @@
+nav {
+  position: relative;
+  text-align: center;
+  border-bottom: 3.5px solid #bcc3c2d4;
+  border-top: 4.0px solid #0a7965df;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none; /* リストマーカーを削除 */
+  padding: 0 0;
+  margin: 0 0;
+  background-color: #c3dad5d4;
+}
+
+nav ul li {
+  position: relative;
+  display: inline-block; /* インラインブロックで横並びに */
+  padding: 0 15px;
+}
+
+nav > ul > li:not(:last-child){
+  border-right:3px solid #ffffff;
+  }
+
+nav ul li a {
+  display: block;
+  padding: 15px 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: rgb(0, 77, 54);
+  text-align: center;
+  text-decoration: none;
+}
+  
+
+nav ul li.current a{
+  color: #f35e31;
+  }
+
+nav ul li a:hover {
+  text-decoration: underline; 
+  color: #db9b3a;   
+}
+
+nav ul ul {
+  display: none; /* 初期状態でドロップダウンを隠す */
+  position: absolute;
+  top: 100%; /* 親要素の下に配置 */
+  padding: 0;
+  margin: 0;
+  background-color: #f2f2f288;
+  list-style-type: none;
+  z-index: 1000; /* 重なり順を指定 */
+}
+
+nav > ul > ul > li{
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.dropdown-content li{
+  float: none;
+  width: 100%;
+}
+
+.dropdown-content a:hover {
+  text-decoration: underline; 
+  color: #db9b3a;
+}
+
+nav .dropbtn {
+  width: 100%;
+}
+
+
+/* ドロップダウンを表示するためのクラス */
+.show {
+  display: block;
+}
+
+.menu-icon {
+  display: none;  /* 初期状態では非表示 */
+  font-size: 30px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.dropdown-icon {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  transition: transform 0.3s ease; /* 開閉時のアニメーション */
+}
+.dropdown-icon.rotate {
+  transform: rotate(180deg); /* 回転してアイコンを上向きに */
+}
+
+@media screen and (max-width: 1400px) {
+
+  .dropdown-content li{
+    float: none;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1.6px solid #c9c9c9;
+    border-left: 1.6px solid #c9c9c9;
+    border-right: 1.6px solid #c9c9c9;
+  }
+
+}
+
+@media screen and (max-width: 760px) {
+  .menu-icon {
+    display: block;  /* 小さい画面では表示 */
+    background-color: #01282100;
+    color: white;
+    padding-left: 5%;
+  }
+
+  nav {
+    position: relative;    
+    border-top: 0.6px solid #c9c9c9;
+    border-bottom: 1.5px solid #c9c9c9;
+    display: flex;
+    background-color: #012821d4;
+  }
+
+  nav ul {
+    display: none;  /* 初期状態ではナビゲーションメニューを隠す */
+    flex-direction: column;  /* 縦並びにする */
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f2f4;  /* ナビメニューの背景色 */
+    z-index: 1000;   
+    border-bottom: 3px solid #c9c9c9;
+  }
+
+  nav > ul > li {
+    height: 200%;
+    padding-left: 10pt;    
+    width: 100%;
+    text-align: left;
+  }
+
+  nav > ul > li:not(:last-child){
+    border-right:0 solid #ddd;
+    border-bottom: 1.0px solid #c9c9c9;
+  }
+
+  #nav-menu.show {
+    display: flex; /* ハンバーガーアイコンで表示 */
+  } 
+  
+  nav ul ul {
+    display: none;  /* 初期状態で非表示 */
+    position: absolute;
+    background-color: #f2f2f2f4;
+    width: 120%;
+    z-index: 1;
+    padding: 0 0;
+    margin: 0 0;
+  }
+
+  .dropdown-content li{
+    padding-left: 3%;
+  }
+
+  .dropdown-content li:not(:last-child) {
+    border-top: 1.0px dashed #c9c9c9;
+    border-bottom: 1.0px dashed #c9c9c9;
+  }
+
+  nav ul li a {
+    display: block;
+    padding-left: 5%;
+    color: rgb(0, 77, 54);
+    text-align: left;
+    text-decoration: none;
+  }
+
+  
+}
