@@ -5,6 +5,7 @@ source "https://rubygems.org"
 # gem "rails"
 gem "jekyll", "~> 4.3.4"
 gem "minima", "~> 2.5"
+gem 'sass-embedded'
 
 group :jekyll_plugins do
     gem 'jekyll-sitemap'

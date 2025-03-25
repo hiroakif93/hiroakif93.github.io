@@ -1,11 +1,11 @@
 ---
 ---
 
-@use "main";
-@use "layout";
-@use "navbar";
-@use "header";
-@use "index";
-@use "footer";
-@use "about";
-@use "publication"
+@import "main";
+@import "layout";
+@import "navbar";
+@import "header";
+@import "index";
+@import "footer";
+@import "about";
+@import "publication"
