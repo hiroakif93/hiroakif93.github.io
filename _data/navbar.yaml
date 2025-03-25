@@ -4,7 +4,7 @@
 - name: About
   ja: /_contents/about/about.html 
   en: /_contents/about/about_en.html
-- name: Publication
+- name: Publications
   ja: /_contents/publications/index.html
   en: /_contents/publications/index_en.html
 - name: Documents
