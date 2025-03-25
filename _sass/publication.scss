@@ -7,6 +7,7 @@
 }
 .pub {
     
+    font-family: 'Lexend', 'Noto Sans JP', sans-serif;
     width: 80%;           
     margin: 0 auto;       
     padding: 5% ;
@@ -27,6 +28,7 @@
         li {
             margin-bottom: 1rem;
             padding: 0 2%;
+            font-weight: 300;
         }
 
         li::before {
