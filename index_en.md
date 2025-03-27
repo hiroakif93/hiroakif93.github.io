@@ -1,5 +1,6 @@
 ---
 title: Hiroaki Fujita's Website
+meta_description: Introduction of Hiroaki Fujita's work. My main field is community ecology.
 description: I am conducting research on "community dynamics, species interaction network and community stability".
 layout: index
 lang: en
