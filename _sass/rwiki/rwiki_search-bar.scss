@@ -1,0 +1,27 @@
+.search-bar {
+    padding-bottom: 0.2rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    border-bottom: 1px solid var(--border-color);
+    border-width: var(--border-width);
+    background-color: var(--sub-color);
+    color: var(--main-color);
+
+    h1 {
+        a {
+            font-size: 2.2rem;
+            font-weight: 800;
+            text-decoration: none;
+        }
+        a:visited{
+            color: var(--main-color);
+        }
+    }
+}
+
+input {
+    width: 100%; 
+    padding: 0.1rem;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}

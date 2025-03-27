@@ -1,0 +1,57 @@
+.sidebar {
+    background-color: var(--main-color); 
+    padding-left: 0.5rem;
+    padding-right: 2rem;
+
+}
+
+ul.dropdown {
+  
+  padding-left: 0.5rem;
+  
+  li {
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    width: 180px;          
+    display: inline-block; /* ★横並びに配置する */
+    list-style-type: none; /* ★リストの先頭記号を消す */
+    position: relative;
+
+    li {
+        font-size: 1.1rem;
+        padding-top: 0.5rem;
+    }
+  }
+
+  a {
+    padding: 0.5rem;
+    background-color: rgb(0, 62, 43); 
+    color: white;              
+    line-height: 40px;         
+    text-decoration: none;     
+    font-weight: bold;         
+    border-radius: 5px;    
+  }
+
+  ul {
+    margin: 0px;        
+    padding: 0px;       
+    display: none;      
+    position: relative; 
+
+    a {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+
+  a:hover{
+    background-color: rgb(132, 192, 174); /* メニュー項目の背景色(濃い赤色) */
+    color: white;              /* メニュー項目の文字色(白色) */
+    line-height: 40px;         /* メニュー項目のリンクの高さ(40px) */
+    text-decoration: none;     /* メニュー項目の装飾(下線を消す) */
+    font-weight: bold;         /* 太字にする */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.82);
+  }
+
+} 

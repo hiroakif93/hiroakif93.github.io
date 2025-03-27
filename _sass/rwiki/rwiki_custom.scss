@@ -1,0 +1,48 @@
+:root {
+    --main-color: rgb(0, 62, 43);
+    --sub-color: #c3dad5d4;
+    --background-color: #f8f5e9bb;
+    --border-color: rgb(4, 165, 116);
+    --border-width: 2px;
+  }
+  
+  
+body {
+  color: #222;
+  line-height: 1.5;
+  max-width: 100%;
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+code {
+  color: #000000; /* 文字色 */
+  font-family: "Courier New", monospace; /* フォント */
+  font-size: 1em; /* 文字サイズ */
+  font-weight: 400;
+  padding: 2px 5px; /* 余白 */
+  border-radius: 3px; /* 角丸 */
+  border: 1px solid #ddd; /* 枠線 */
+}
+
+pre, .entry-content pre {
+  margin: 0 100px 20px 0px;
+}
+
+pre > code, .entry-content pre > code {
+  font-size: 1.1em;
+  margin: 0;
+  font-family: monospace;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  display: block;
+  background: #222222;
+  color: #cae8e1e6;
+  overflow: auto;
+  white-space: pre;
+  border-radius: 2%;
+  border-color: var(--sub-color);
+  border-width: var(--border-width);
+  border-style: solid;
+}

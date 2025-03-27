@@ -1,0 +1,16 @@
+
+header.header {
+  padding-bottom: 1rem;
+  background-color: var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+  border-width: var(--border-width);
+
+  a {
+    color: #f8f5e9;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    max-width: 100%;
+  }
+}
