@@ -4,8 +4,8 @@
     padding-right: 2rem;
     border-bottom: 1px solid var(--border-color);
     border-width: var(--border-width);
-    background-color: var(--sub-color);
-    color: var(--main-color);
+    background-color: var(--thene-sub-color);
+    color: var(--thene-main-color);
 
     h1 {
         a {
@@ -14,7 +14,7 @@
             text-decoration: none;
         }
         a:visited{
-            color: var(--main-color);
+            color: var(--thene-main-color);
         }
     }
 }

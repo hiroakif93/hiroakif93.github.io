@@ -1,20 +1,3 @@
-:root {
-    --main-color: rgb(0, 62, 43);
-    --sub-color: #c3dad5d4;
-    --background-color: #f8f5e9bb;
-    --border-color: rgb(4, 165, 116);
-    --border-width: 2px;
-  }
-  
-  
-body {
-  color: #222;
-  line-height: 1.5;
-  max-width: 100%;
-  font-family: "Zen Maru Gothic", serif;
-  font-weight: 400;
-  font-style: normal;
-}
 
 code {
   color: #000000; /* 文字色 */
@@ -42,7 +25,7 @@ pre > code, .entry-content pre > code {
   overflow: auto;
   white-space: pre;
   border-radius: 2%;
-  border-color: var(--sub-color);
+  border-color: var(--theme-sub-color);
   border-width: var(--border-width);
   border-style: solid;
 }

@@ -1,6 +1,6 @@
-import sys,os,glob
+import sys,os,glob,json
 path='/Users/hiroakifujita/works/HOMEPAGE/_contents/publications'
-output='/Users/hiroakifujita/works/HOMEPAGE/_includes'
+output='/Users/hiroakifujita/works/HOMEPAGE/_data/publications'
 
 class RISConverter():
     
@@ -62,11 +62,17 @@ class RISConverter():
 
     
     def get_title(self):
-        if 'TI' not in self.ris_dict or len(self.ris_dict['TI']) == 0:
+        if 'TI' not in self.ris_dict or len(self.ris_dict['TI']) == 0:            
             self.ris_dict['TI'] = [self.ris_dict['T1'][0]]
         
         return self.ris_dict['TI']
 
+    def extract_as_json(self, keys):
+        
+        self.get_title()
+        result = {key: self.ris_dict.get(key) for key in keys}
+        #json.dump(result, open(f'{output}/publications.json', 'w'))
+        return result
                     
     def main(self):
         files = glob.glob(self.path+"/*")
@@ -82,26 +88,30 @@ class RISConverter():
                 
             pub_order = self.ris_dict['PY'][0][0:4] + '_' + str(cnt)
             cnt += 1    
-                                 
-            info = self.ris_dict['AU'] + ' '
-            info += f"({self.ris_dict['PY'][0][0:4]})" + ' '
-            info += "<b>" + self.get_title()[0]+ '. ' + "</b>"
-            info += "<i>" + self.ris_dict['JO'][0]+ '. </i>'
-            info += f"<a href='https://doi.org/{self.ris_dict['DO'][0]}'>{self.ris_dict['DO'][0]}</a>"+ '. '
+
+            publications[pub_order] = self.extract_as_json(['AU', 'PY', 'TI', 'JO', 'DO'])
+            # info = self.ris_dict['AU'] + ' '  
+            # info += f"({self.ris_dict['PY'][0][0:4]})" + ' '
+            # info += "<b>" + self.get_title()[0]+ '. ' + "</b>"
+            # info += "<i>" + self.ris_dict['JO'][0]+ '. </i>'
+            # info += f"<a href='https://doi.org/{self.ris_dict['DO'][0]}'>{self.ris_dict['DO'][0]}</a>"+ '. '
             
-            publications[pub_order] = info
+            # publications[pub_order] = info
         
-        return publications
+        publications_sorted = sorted(publications.items(), key=lambda x:x[0], reverse=True)
+        
+        return publications_sorted
         
 if __name__ == '__main__':
     
     riscon = RISConverter(path+"/published").main()
-    pub_keys = riscon.keys()
-    riscon_sorted = sorted(riscon.items(), key=lambda x:x[0], reverse=True)
-
-    with open(f'{output}/pulications.html', mode='w') as f:        
-        for line in riscon_sorted:
-            line_no = f'<li>' + "".join(line[1:])                    
-            f.write(line_no+'</li>\n')
-        
-
+    json.dump(riscon, open(f'{output}/publications.json', 'w'), indent=4, separators=(",", ": "), sort_keys=True)
+    # pub_keys = riscon.keys()
+    # riscon_sorted = sorted(riscon.items(), key=lambda x:x[0], reverse=True)
+    import pprint
+    pprint.pprint(object=riscon)
+    # with open(f'{output}/pulications.html', mode='w') as f:        
+    #     for line in riscon_sorted:
+    #         line_no = f'<li>' + "".join(line[1:])                    
+    #         f.write(line_no+'</li>\n')
+                

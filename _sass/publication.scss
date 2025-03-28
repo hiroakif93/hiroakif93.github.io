@@ -26,9 +26,14 @@
         @include box-style();
 
         li {
-            margin-bottom: 1rem;
+            margin-top: 1rem;
             padding: 0 2%;
             font-weight: 300;
+
+        }
+
+        li:last-child {
+            margin-bottom: 1rem;
         }
 
         li::before {
@@ -39,4 +44,10 @@
           }
     }
 
+    .press {
+        
+        a {
+            padding: 0 2%;            
+        }
+    }
 }

@@ -1,6 +1,6 @@
 ---
 title: Hiroaki Fujita's Website
-meta_description: 藤田博昭の研究紹介ページ.主に群集生態学を対象に研究を行っております.
+meta_description: 藤田博昭のホームページ. 研究紹介だけでなく、Rを初めとしたデータ解析の紹介をします.
 description: 群集動態予測や種間相互作用ネットワーク解明をテーマに<br>「群集情報解析屋」を目指しています.
 layout: index
 lang: ja

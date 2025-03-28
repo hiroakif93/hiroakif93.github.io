@@ -13,7 +13,16 @@ ja_path: "/_contents/publications/index.html"
     <h1>Refereed journal articles</h1> 
     <hr>
     <ol>
-        {% include pulications.html %}
+    {% for pub in site.data.publications.publications %}        
+        {% assign metadata = pub[1] %}
+        
+            <li>
+                {{ metadata.AU }}., ({{ metadata.PY }}).<br>
+                <b>{{ metadata.TI }}</b>.  <i>{{ metadata.JO }}.</i> <br>
+                DOI: <a href="https://doi.org/{{ metadata.DO }}">{{ metadata.DO }}</a>
+            </li>
+        
+    {% endfor %}
     </ol>
 
 </div>

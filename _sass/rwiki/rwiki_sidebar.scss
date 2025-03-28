@@ -1,11 +1,11 @@
 .sidebar {
-    background-color: var(--main-color); 
+    background-color: var(--theme-main-color); 
     padding-left: 0.5rem;
     padding-right: 2rem;
 
 }
 
-ul.dropdown {
+.rwiki-sidebar > ul.dropdown {
   
   padding-left: 0.5rem;
   
@@ -31,6 +31,7 @@ ul.dropdown {
     text-decoration: none;     
     font-weight: bold;         
     border-radius: 5px;    
+    border-left:3px solid #bdbcbc;
   }
 
   ul {

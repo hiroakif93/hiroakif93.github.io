@@ -1,18 +1,18 @@
 - name: Home
-  link: /
+  link: /_contents/documents/RWIKI/index.html
 - name: 基礎
   submenu:
     - subname: オブジェクト
-      link: /_contents/object.html
+      link:  /_contents/documents/RWIKI/object.html
     - subname: 文法
-      link: /_contents/grammer.html    
+      link:  /_contents/documents/RWIKI/grammer.html    
     - subname: データの操作
-      link: /_contents/handling.html
+      link:  /_contents/documents/RWIKI/handling.html
     - subname: 可視化
-      link: /_contents/visualize.html
+      link:  /_contents/documents/RWIKI/visualize.html
 - name: ggplot2
   submenu:
     - subname: 基礎
-      link: /_contents/ggplot2.html
+      link:  /_contents/documents/RWIKI/ggplot2.html
     - subname: グラフの種類
-      link: /_contents/ggplot2.html
+      link:  /_contents/documents/RWIKI/ggplot2.html

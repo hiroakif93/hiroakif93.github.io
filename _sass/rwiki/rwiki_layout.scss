@@ -1,5 +1,5 @@
 
-.layout {
+.rwiki-layout {
   display: grid;
   grid-template: 
       "header header" 50px  
@@ -23,11 +23,11 @@
     grid-area: sidebar;
   }
 
-  .content {
+  .rwiki {
     grid-area: content;
   } 
 
-  .footer {
+  .rwiki-footer {
     grid-area: footer;
   }
 }

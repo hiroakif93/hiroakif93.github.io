@@ -1,0 +1,164 @@
+[
+    [
+        "2025_7",
+        {
+            "AU": "<b>Fujita H.</b>, Yoshida S., Suzuki K., Toju H.",
+            "DO": [
+                "10.1186/s40793-025-00688-4"
+            ],
+            "JO": [
+                "Environmental Microbiome"
+            ],
+            "PY": [
+                "2025"
+            ],
+            "TI": [
+                "Alternative stable states of microbiome structure and soil ecosystem functions"
+            ]
+        }
+    ],
+    [
+        "2024_8",
+        {
+            "AU": "<b>Fujita H.</b>, Yoshida S., Suzuki K., Toju H.",
+            "DO": [
+                "10.1128/msphere.00803-23"
+            ],
+            "JO": [
+                "mSphere"
+            ],
+            "PY": [
+                "2024"
+            ],
+            "TI": [
+                "Soil prokaryotic and fungal biome structures associated with crop disease status across the Japan Archipelago"
+            ]
+        }
+    ],
+    [
+        "2024_6",
+        {
+            "AU": "Hayashi I., <b>Fujita H.</b>, Toju H.",
+            "DO": [
+                "10.1093/ismeco/ycae007"
+            ],
+            "JO": [
+                "ISME Communications"
+            ],
+            "PY": [
+                "2024"
+            ],
+            "TI": [
+                "Deterministic and stochastic processes generating alternative states of microbiomes"
+            ]
+        }
+    ],
+    [
+        "2023_9",
+        {
+            "AU": "<b>Fujita H.</b>, Ushio M., Suzuki K., Abe S. M., Yamamichi M., Okazaki Y., Canarini A., Hayashi I., Fukushima K., Fukuda S., Kiers E. T., Toju H.",
+            "DO": [
+                "10.3389/fmicb.2023.1261137"
+            ],
+            "JO": [
+                "Frontiers in Microbiology"
+            ],
+            "PY": [
+                "2023"
+            ],
+            "TI": [
+                "Metagenomic analysis of ecological niche overlap and community collapse in microbiome dynamics"
+            ]
+        }
+    ],
+    [
+        "2023_4",
+        {
+            "AU": "<b>Fujita H.</b>, Ushio M., Suzuki K., Abe S. M., Yamamichi M., Okazaki Y., Canarini A., Hayashi I., Fukushima K., Fukuda S., Kiers E. T., Toju H.",
+            "DO": [
+                "10.3389/fmicb.2023.1153952"
+            ],
+            "JO": [
+                "Frontiers in Microbiology"
+            ],
+            "PY": [
+                "2023"
+            ],
+            "TI": [
+                "Facilitative interaction networks in experimental microbial community dynamics"
+            ]
+        }
+    ],
+    [
+        "2023_3",
+        {
+            "AU": "Yajima D., <b>Fujita H.</b>, Hayashi I., Shima G., Suzuki K., Toju H.",
+            "DO": [
+                "10.1186/s40168-023-01498-x"
+            ],
+            "JO": [
+                "Microbiome"
+            ],
+            "PY": [
+                "2023"
+            ],
+            "TI": [
+                "Core species and interactions prominent in fish-associated microbiome dynamics"
+            ]
+        }
+    ],
+    [
+        "2023_1",
+        {
+            "AU": "<b>Fujita H.</b>, Ushio M., Suzuki K., Abe S. M., Yamamichi M., Iwayama K., Canarini A., Hayashi I., Fukushima K., Fukuda S., Kiers E. T., Toju H.",
+            "DO": [
+                "10.1186/s40168-023-01474-5"
+            ],
+            "JO": [
+                "Microbiome"
+            ],
+            "PY": [
+                "2023"
+            ],
+            "TI": [
+                "Alternative stable states, nonlinear behavior, and predictability of microbiome dynamics"
+            ]
+        }
+    ],
+    [
+        "2021_2",
+        {
+            "AU": "Hori Y., <b>Fujita H.</b>, Hiruma K., Narisawa K., Toju H.",
+            "DO": [
+                "10.3389/fmicb.2021.713180"
+            ],
+            "JO": [
+                "Frontiers in Microbiology"
+            ],
+            "PY": [
+                "2021"
+            ],
+            "TI": [
+                "Synergistic and Offset Effects of Fungal Species Combinations on Plant Performance"
+            ]
+        }
+    ],
+    [
+        "2020_5",
+        {
+            "AU": "Toju H., Abe M., Ishii C., Hori Y., <b>Fujita H.</b>, Fukuda S.",
+            "DO": [
+                "10.3389/fmicb.2020.01361"
+            ],
+            "JO": [
+                "Frontiers in Microbiology"
+            ],
+            "PY": [
+                "2020/06/25"
+            ],
+            "TI": [
+                "Scoring Species for Synthetic Community Design: Network Analyses of Functional Core Microbiomes"
+            ]
+        }
+    ]
+]

@@ -27,34 +27,34 @@
   </head>
 
   <!-- Main contents -->
-  <body class="layout">
+  <body class="rwiki-layout">
   
     <!--  Header  -->
-    {% include header.html %}
+    {% include rwiki/header.html %}
 
     <!--  Search bar  -->
     <aside class="search-bar">
       <h1>
-        <a href="{{ '/' | relative_url }}">
-          {{ site.data.title.name }}
+        <a href="{{ site.data.RWIKI.link }}">
+          R wiki
         </a>
       </h1>
-      {% include searchbar.html %}
+      {% include rwiki/searchbar.html %}
     </aside>
     
     <!--  Navbar  -->
     <nav class="sidebar"> 
-      {% include sidebar.html %}       
+      {% include rwiki/sidebar.html %}       
     </nav>
     
     <!--  Markdown parts  -->
-    <main class="content">
+    <main class="rwiki">
       {{ content }}
     </main>
 
   
     <!-- ### Footer: HTML properties ### -->
-    <footer class="footer">
+    <footer class="rwiki-footer">
       <p>
         <small>
           <a href="https://hiroakif93.github.io/rwiki/">R Wiki</a>
