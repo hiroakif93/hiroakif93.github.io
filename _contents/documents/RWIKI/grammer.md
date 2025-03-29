@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: rwiki
 title: Rの文法
 description: Rの記法について紹介
 ---

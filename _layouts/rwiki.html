@@ -18,7 +18,60 @@
     <!-- JS -->
     <script src="{{ site.baseurl }}/assets/js/sidebar.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr-languages/1.8.0/lunr.multi.min.js"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.relBasePath='.';
+      window.relearn.relBaseUri='.';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.contentLangs=['en'];
+      window.relearn.index_js_url="/searchindex.en.js?1742014862";
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        var select = document.querySelector("#R-select-variant");
+        if (select) {
+          select.value = variant;
+        }
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
     <!-- font -->
     {% include font.html %}
     {% feed_meta %}
@@ -30,8 +83,10 @@
   <body class="rwiki-layout">
   
     <!--  Header  -->
-    {% include rwiki/header.html %}
-
+    <header class="rwiki-header">
+      <a href="/">Hiroaki Fujita's Website</a>
+    </header>
+    
     <!--  Search bar  -->
     <aside class="search-bar">
       <h1>
@@ -39,7 +94,7 @@
           R wiki
         </a>
       </h1>
-      {% include rwiki/searchbar.html %}
+      <!--  {% include rwiki/searchbar.html %} -->
     </aside>
     
     <!--  Navbar  -->
@@ -54,14 +109,10 @@
 
   
     <!-- ### Footer: HTML properties ### -->
-    <footer class="rwiki-footer">
-      <p>
-        <small>
-          <a href="https://hiroakif93.github.io/rwiki/">R Wiki</a>
-        </small>
-      </p>
+    <!-- footer -->
+    <footer class="footer">
+      {% include footer.html %}
     </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

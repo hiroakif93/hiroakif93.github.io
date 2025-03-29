@@ -1,7 +1,39 @@
 
+<script type="text/javascript">
+  $(function(){
+    
+    $("ul.rwiki-dropdown li").click(function(e){
+      e.stopPropagation(); 
+      $(this).siblings().find("ul").slideUp(150); 
+      $(this).children("ul").slideToggle(150); 
+    });
+
+    $('html').click(function() {
+      $('ul.rwiki-dropdown ul').slideUp(150);
+    });
+
+    const hamburger = document.getElementById("js-hamburger");
+    const dropdown = document.getElementById("js-dropdown");
+
+    if (hamburger && dropdown) {
+      hamburger.addEventListener("click", function(e) {
+        e.stopPropagation();
+        dropdown.classList.toggle("active");
+      });
+    }
+    
+  });
+</script>
+
 <div class="rwiki-sidebar">
 
-  <ul class="dropdown">
+  <!-- hamburger -->
+  <button class="hamburger" id="js-hamburger">    
+    <i class="fa-solid fa-bars"></i>
+    <span class="menu-text">Menu</span>
+  </button>
+
+  <ul class="rwiki-dropdown">
     {% for item in site.data.RWIKI %}
       {% if item.submenu %}
         <li>

@@ -1,4 +1,4 @@
-<script>
+
 document.addEventListener('DOMContentLoaded', function() {
     var dropdowns = document.querySelectorAll('nav > ul > li');
 
@@ -21,4 +21,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-</script>
