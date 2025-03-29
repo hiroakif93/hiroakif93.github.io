@@ -1,5 +1,6 @@
 ---
 layout: rwiki
+permalink: /hiroakif93-rwiki/object
 title: オブジェクト・型・クラス
 description: オブジェクトの型と主に使うクラスを紹介
 ---

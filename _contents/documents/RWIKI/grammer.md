@@ -1,5 +1,6 @@
 ---
 layout: rwiki
+permalink: /hiroakif93-rwiki/grammer
 title: Rの文法
 description: Rの記法について紹介
 ---
