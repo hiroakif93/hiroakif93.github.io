@@ -1,5 +1,5 @@
 - name: Home
-  link: /_contents/documents/RWIKI/index.html
+  link: /hiroakif93-rwiki/index.html
 - name: 基礎
   submenu:
     - subname: オブジェクト
