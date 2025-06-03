@@ -5,17 +5,18 @@
     display: grid;
 
     grid-template-areas   : 
-        "short  photo ."
-        "career  career .";
-    grid-template-columns: 1fr 1fr auto;
+        "short  photo"
+        "career  photo";
+    grid-template-columns: 1.8fr auto;
     grid-template-rows: 0.3fr auto;
-    column-gap: 6%;
+    column-gap: 3%;
 
 
     @include breakpoint(sm) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        grid-template-areas   : 
+        "short  photo ."
+        "career  career .";
+        grid-template-columns: 1.8fr auto;
     }
 }
 
@@ -26,17 +27,69 @@ $myselfareas: short, photo, career;
     }
 }  
 
-
-
-img {
-    max-width: 300px;
+img {    
     height: auto;
+    margin-top: 20%;
     margin-bottom: 0;
-    border-radius: 5%;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
-
+    
     @include breakpoint(sm) {
-        max-width: 200px;
+        max-width: 100px;
+    }
+}
+
+.photo {
+    img{
+        max-width: 300px;
+        border-radius: 5%;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    }
+    
+}
+
+.research {
+    p {
+        font-size: 120%;
+        margin-bottom: 2%;
+        margin-top: 0;
+    }
+    
+    .intro {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+
+        img {
+            max-width: 500px;
+            margin-top: 0%;
+        }
+        @include breakpoint(sm) {
+            flex-direction: column;
+        }
+    }
+
+    h2 {
+        font-weight: 600;
+    }
+
+    .works1, .works2 {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+
+        img {
+            width: 100%;
+            height: auto;
+            margin-top: 0%;
+            display: block;
+        }
+
+        @include breakpoint(sm) {
+            img {
+                max-width: 500px;
+                height: auto;
+
+            }
+        }
     }
 }
 
@@ -54,6 +107,10 @@ img {
         z-index: -1; 
     }
 
+    h1 {
+        font-size: 200%;
+        margin-bottom: 0;
+    }
     h2 {
         margin-bottom: 0;
     }
@@ -66,7 +123,7 @@ img {
             list-style-type: none;
 
             li {
-                padding-bottom: 5%;
+                padding-bottom: 1%;
             }
         }
 
@@ -78,8 +135,10 @@ img {
             font-size: 120%;
             list-style-type: disc;
             li {
-                padding-bottom: 2%;
+                padding-bottom: 1%;
             }
         }
     }
+
 }
+

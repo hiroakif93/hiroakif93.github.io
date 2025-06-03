@@ -1,7 +1,7 @@
 - name: Home
   ja: /
   en: /index_en.html
-- name: About
+- name: About/Research
   ja: /_contents/about/about.html 
   en: /_contents/about/about_en.html
 - name: Publications

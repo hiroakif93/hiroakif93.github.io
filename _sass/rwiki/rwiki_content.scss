@@ -2,6 +2,9 @@
     background-color: var(--background-color);
     padding: 1rem;
 
+    font-size: 115%;
+    font-weight: 300;
+
     h1, h2{
         color: var(--theme-main-color);        
     }
@@ -42,29 +45,48 @@
         h1 { font-size: 120%; }
         h2 { font-size: 90%; }
     }
+
+    table {
+        font: "Zen Kaku Gothic New", sans-serif;
+        margin:  auto;
+        border-collapse: collapse;
+        width: 80%;
+        font-size: 100%;
+        font-weight: 350;
+        color: #000000; /* 文字色 */
+        border:2mm ridge rgba(126, 170, 158, 0.6) ;
+        background-color: #e7f0eece;
+
+        th, td {
+            padding: 1% 2%;
+            border:solid #333 1px;
+            margin:  auto;
+        }
+    }
     
 }
 
 
 code {
     color: #000000; /* 文字色 */
-    font-family: "Courier New", monospace; /* フォント */
-    font-size: 1em; /* 文字サイズ */
-    font-weight: 400;
+    font-family: "Source Code Pro", monospace; /* フォント */
+    font-size: 100%; /* 文字サイズ */
+    font-weight: 100;
     padding: 2px 5px; /* 余白 */
     border-radius: 3px; /* 角丸 */
     border: 1px solid #ddd; /* 枠線 */
-  }
-  
-  pre, .entry-content pre {
-    margin: 0 100px 20px 0px;
-  }
-  
-  pre > code, .entry-content pre > code {
+    margin-top: 5%;
+}
+
+pre, .entry-content pre {
+    margin: 1% 5% 2% 0px;
+}
+
+pre > code, .entry-content pre > code {
     font-size: 1.1em;
     margin: 0;
     font-family: monospace;
-    padding: 10px 15px;
+    padding: 1% 2%;
     box-sizing: border-box;
     display: block;
     background: #222222;
@@ -75,4 +97,4 @@ code {
     border-color: var(--theme-sub-color);
     border-width: var(--border-width);
     border-style: solid;
-  }
+}
