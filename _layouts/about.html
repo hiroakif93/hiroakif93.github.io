@@ -3,8 +3,11 @@ layout: default
 ---
 
 <article class="about">
+    <a href='https://researchmap.jp/hiroakif93' target='_blank' class="rmap">
+        <img title='researchmap' alt='researchmap' src='https://researchmap.jp/outline/img/researchmap220.gif' />
+    </a>
     <section class="profile">
-
+        
         <div class="short">
             {% if page.lang == "ja" %}
                 <h2>自己紹介</h2>
@@ -38,7 +41,7 @@ layout: default
                         <li>{{ item }}</li>
                     {% endfor %}
                 {% else %}
-                    {% for item in site.data.myself.history.ja %}   
+                    {% for item in site.data.myself.history.en %}   
                         <li>{{ item }}</li>
                     {% endfor %}
                 {% endif %}            
@@ -59,8 +62,8 @@ layout: default
                     しかし、生物種間の相互作用は、環境条件や群集の構成によって変化するため、それを統一的に理解し、生態系に普遍的な法則を見出すことは容易ではありません。
                 </p>
                 <p>　そこで私は、生物群集の振る舞いを再構築するトップダウン的アプローチと、
-                    ゲノム解析などに基づいて相互作用を推定するボトムアップ的アプローチを組み合わせることで、
-                    生態系における安定化メカニズムの解明を目指しています。</p>
+                    ゲノム解析などに基づいて相互作用を推定するボトムアップ的アプローチを組み合わせ、
+                    多角的に生物群集を俯瞰し、その安定化メカニズムを解明することを目指しています。</p>
             </div>
             <div>
                 <img src="{{ site.baseurl}}/assets/images/species_interaction.png"> 

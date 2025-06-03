@@ -28,8 +28,7 @@ $myselfareas: short, photo, career;
 }  
 
 img {    
-    height: auto;
-    margin-top: 20%;
+    height: auto;    
     margin-bottom: 0;
     
     @include breakpoint(sm) {
@@ -39,6 +38,7 @@ img {
 
 .photo {
     img{
+        margin-top: 20%;
         max-width: 300px;
         border-radius: 5%;
         box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
