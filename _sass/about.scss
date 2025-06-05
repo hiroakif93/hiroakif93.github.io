@@ -14,9 +14,9 @@
 
     @include breakpoint(sm) {
         grid-template-areas   : 
-        "short  photo ."
-        "career  career .";
-        grid-template-columns: 1.8fr auto;
+        "short "
+        "photo"
+        "career ";
     }
 }
 
@@ -42,6 +42,9 @@ img {
         max-width: 300px;
         border-radius: 5%;
         box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+        @include breakpoint(sm) {
+            margin-top: 0%;
+        }
     }
     
 }
@@ -57,14 +60,18 @@ img {
         display: flex;
         align-items: flex-start;
         gap: 20px;
+        @include breakpoint(sm) {
+            flex-direction: column;
+        }
 
         img {
             max-width: 500px;
             margin-top: 0%;
+            @include breakpoint(sm) {
+                width: 100%;
+            }
         }
-        @include breakpoint(sm) {
-            flex-direction: column;
-        }
+        
     }
 
     h2 {
@@ -81,15 +88,11 @@ img {
             height: auto;
             margin-top: 0%;
             display: block;
-        }
-
-        @include breakpoint(sm) {
-            img {
+            @include breakpoint(sm) {
                 max-width: 500px;
-                height: auto;
-
+                height: auto;        
             }
-        }
+        }        
     }
 }
 
