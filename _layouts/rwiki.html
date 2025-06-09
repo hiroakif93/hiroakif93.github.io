@@ -35,20 +35,8 @@
       <a href="/">Hiroaki Fujita's Website</a>
     </header>
     
-    <!--  Search bar  -->
-    <aside class="search-bar">
-      <h1>
-        <a href="{{ site.data.RWIKI.link }}">
-          R wiki
-        </a>
-      </h1>
-      <!--  {% include rwiki/searchbar.html %} -->
-    </aside>
-    
-    <!--  Navbar  -->
-    <nav class="sidebar"> 
-      {% include rwiki/sidebar.html %}       
-    </nav>
+    <!--  Sidebar  -->
+    {% include rwiki/sidebar.html %}  
     
     <!--  Markdown parts  -->
     <main class="rwiki">

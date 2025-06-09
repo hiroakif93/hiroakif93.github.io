@@ -1,5 +1,10 @@
 @import "mixin";
 
+.link {
+    display: flex;   
+    column-gap: 5%; 
+}
+
 .pubtop {
     font-size: 150%;
     border-bottom: 4px double var(--theme-sub-color);

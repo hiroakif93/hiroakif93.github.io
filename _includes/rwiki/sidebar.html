@@ -25,31 +25,41 @@
   });
 </script>
 
-<div class="rwiki-sidebar">
+<nav class="sidebar"> 
+      
+  <!--  Search bar  -->
+  <aside class="search-bar">
+    <h1>
+      <a href="{{ site.data.RWIKI.link }}">
+      R wiki
+      </a>
+    </h1>
+  <!--  {% include rwiki/searchbar.html %} -->
+  </aside>
 
-  <!-- hamburger -->
-  <button class="hamburger" id="js-hamburger">    
-    <i class="fa-solid fa-bars"></i>
-    <span class="menu-text">Menu</span>
-  </button>
+  <!--  Navbar  -->    
+  <div class="rwiki-sidebar">
 
-  <ul class="rwiki-dropdown">
-    {% for item in site.data.RWIKI %}
-      {% if item.submenu %}
-        <li>
-          <a href="#">{{ item.name }}</a>
-          <ul> 
-            {% for subitem in item.submenu %}
-              <li><a href="{{ subitem.link }}">{{ subitem.subname }}</a></li>
-            {% endfor %}
-          </ul>
-        </li>
-      {% else %}
-        <li>
-          <a href="{{ item.link }}">{{ item.name }}</a>
-        </li>
-      {% endif %}
-    {% endfor %}
-    </ul>
+    <ul class="rwiki-dropdown">
+      {% for item in site.data.RWIKI %}
+        {% if item.submenu %}
+          <li>
+            <a href="#">{{ item.name }}</a>
+            <ul> 
+              {% for subitem in item.submenu %}
+                <li><a href="{{ subitem.link }}">{{ subitem.subname }}</a></li>
+              {% endfor %}
+            </ul>
+          </li>
+        {% else %}
+          <li>
+            <a href="{{ item.link }}">{{ item.name }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+      </ul>
 
-</div>
+  </div> 
+
+</nav>
+
