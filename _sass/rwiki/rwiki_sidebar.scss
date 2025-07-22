@@ -61,8 +61,55 @@
 
 } 
 
+.hiddenbar {
+  display: none;  /* 初期状態では非表示 */
+  font-size: 1.8rem;
+  border: none;
+  cursor: pointer;
+  
+  padding-top: 10%;
+
+  .closebutton {
+    display: none;
+  }
+}
 
 /* responsive */
 @media (max-width: 768px) {
 
+  .search-bar {
+    display: none;
+  }
+  
+  .hiddenbar {
+    display: flex;
+    color: var(--theme-sub-color);
+    background-color: var(--theme-main-color);
+    
+  }
+
+  .openbutton.active {
+    display: none;
+  }
+  .closebutton.active {
+    display: flex;
+  }
+
+  .rwiki-dropdown {
+    display: none;
+    position: fixed;
+    left: 30pt;
+    top:20pt;
+    flex-direction: column;
+    overflow-y: auto; 
+    width: 220px;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.3);
+  } 
+  .rwiki-dropdown.active {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--theme-main-color);
+    z-index: 1000;
+    height:auto;
+  }
 }

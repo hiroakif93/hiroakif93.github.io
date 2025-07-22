@@ -12,13 +12,18 @@
       $('ul.rwiki-dropdown ul').slideUp(150);
     });
 
-    const hamburger = document.getElementById("js-hamburger");
+    const hiddenbar = document.getElementById("js-hiddenbar");
     const dropdown = document.getElementById("js-dropdown");
+    const openbutton = document.getElementById("openbutton");
+    const closebutton = document.getElementById("closebutton");
 
-    if (hamburger && dropdown) {
-      hamburger.addEventListener("click", function(e) {
+    if (hiddenbar && dropdown) {
+      hiddenbar.addEventListener("click", function(e) {
         e.stopPropagation();
         dropdown.classList.toggle("active");
+        closebutton.classList.toggle("active");
+        openbutton.classList.toggle("active");
+
       });
     }
     
@@ -28,19 +33,27 @@
 <nav class="sidebar"> 
       
   <!--  Search bar  -->
-  <aside class="search-bar">
+
+  <div class="search-bar">
     <h1>
       <a href="{{ site.data.RWIKI.link }}">
       R wiki
       </a>
     </h1>
   <!--  {% include rwiki/searchbar.html %} -->
-  </aside>
+  </div>
+
+  <button class="hiddenbar" id="js-hiddenbar">    
+      <div class="openbutton" id="openbutton"><i class="fa-solid fa-plus"></i></div>
+      <!-- <i class="fa-solid fa-location-arrow"></i>  -->
+      <!-- <i class="fa-solid fa-square-plus"></i> -->
+      <div class="closebutton" id="closebutton"><i class="fa-solid fa-minus"></i></div>
+  </button>
 
   <!--  Navbar  -->    
   <div class="rwiki-sidebar">
 
-    <ul class="rwiki-dropdown">
+    <ul class="rwiki-dropdown" id="js-dropdown">
       {% for item in site.data.RWIKI %}
         {% if item.submenu %}
           <li>

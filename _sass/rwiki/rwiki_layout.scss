@@ -2,7 +2,7 @@
 .rwiki-layout {
   display: grid;
   grid-template: 
-      "header header" 50px  
+      "header header" 0.05fr  
       "sidebar content" 150px
       "sidebar content" auto
       "footer   footer" 0.2fr /
@@ -30,4 +30,14 @@
   .footer {
     grid-area: footer;
   }
+
+  @include breakpoint(md) {
+    grid-template: 
+      "header header" 0.05fr   
+      "sidebar content" auto
+      "footer   footer" 0.2fr /
+      0.05fr 1fr;
+  }
+
 }
+
