@@ -1,6 +1,6 @@
 import sys,os,glob,json
-path='/Users/hiroakifujita/works/HOMEPAGE/_contents/publications'
-output='/Users/hiroakifujita/works/HOMEPAGE/_data/publications'
+path='/Users/hiroakifujita/works/HOMEPAGE/MAIN/_contents/publications'
+output='/Users/hiroakifujita/works/HOMEPAGE/MAIN/_data/publications'
 
 class RISConverter():
     
