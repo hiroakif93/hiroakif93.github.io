@@ -8,11 +8,8 @@
   ja: /_contents/publications/index.html
   en: /_contents/publications/index_en.html
 - name: Documents
-  content: 
-    - name: R
-      link: /hiroakif93-rwiki
-    - name: Bioinfo
-      link: /_contents/bioinfo.html
+  ja: https://hiroakif93.github.io/hiroakif93_notes/
+  en: https://hiroakif93.github.io/hiroakif93_notes/
 - name: Blog
   ja: https://alhazerd-fx.hatenablog.com/
   en: https://alhazerd-fx.hatenablog.com/

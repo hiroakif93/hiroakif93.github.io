@@ -12,18 +12,19 @@
   font-weight: 100;
 
   li {
-    font-size: 120%;
+    font-size: 100%;
     
     padding: 3% 5%;
     width: 180px;          
-    display: inline-block; /* ★横並びに配置する */
-    list-style-type: none; /* ★リストの先頭記号を消す */
+    display: inline-block; 
+    list-style-type: none; 
     position: relative;
 
     li {
       font-size: 90%;
       padding: 0%;
     }
+    
   }
 
   a {
